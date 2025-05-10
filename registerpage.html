@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <div class="left">
+        <h1><b>Enter the untamed</b></h1>
+        <h1><b>wilderness with</b></h1>
+        <h1><b>ZAIRZA</b></h1>
+        <p>Release all your stress with the exciting Tech and Fun events in the most awaited fest. 
+        Zairzest 4.0 presented by Zairza.</p>
+    </div>
+    <div class="right">
+        <h1><b>Become the Beast of the Cyber Forest</b></h1>
+        <p>Sign up to get into zairza</p>
+        <div><input class="inputbox" type="text" placeholder="Name"></div><br>
+        <div><input class="inputbox" type="number" placeholder="Registration number"></div><br>
+        <div><input class="inputbox" type="email" placeholder="Email here"></div><br>
+        <div class="password-container">
+            <input type="password" placeholder="Create Your Own Password" id="passwordfield">
+            <i class="fa-solid fa-eye" id="eyeicon"></i>
+        </div>        
+        <br>
+        <img src="QRCODE.PNG"><br>
+        <Button>Sign Up</Button>
+        <p>Already Registered?<a href="">Login</a></p>
+    </div>
+    <script>
+        const eye=document.querySelector('#eyeicon');
+        const passwordfield=document.getElementById('passwordfield');
+        eye.addEventListener('click',function(){
+            if(passwordfield.getAttribute('type')==='password'){
+                passwordfield.setAttribute('type','text');
+                eye.classList.toggle('fa-solid fa-eye-slash');
+            }
+        })
+    </script>
+</body>
+
+</html>
