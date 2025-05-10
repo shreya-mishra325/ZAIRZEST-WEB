@@ -1,1 +1,159 @@
 /*HOME PAGE CSS*/
+
+.first-part {
+    color: #ffffff;
+    margin: 0%;
+    padding: 0;
+    background-image: url("forest.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Outfit-Bold',sans-serif;
+    font-size: 20px;
+    position: relative;
+}
+
+.top-navigation {
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+    padding: 2%;
+    z-index: 1000;
+}
+
+.top-buttons {
+    margin: 45px;
+    display: flex;
+    background-color: transparent;
+    justify-content: flex-end;
+    color: rgb(255, 255, 255);
+    gap: 65px;
+    text-decoration: none;
+    margin-left: 700px;
+}
+
+.nav-buttons {
+    color: white;
+    text-decoration: none;
+}
+.nav-buttons:hover {
+    color: #282eeb;
+}
+
+.first {
+    font-family: 'Outfit-Bold',sans-serif;
+    margin-top: 230px;
+    line-height: 0.2;
+    font-size: 1.4em;
+}
+.second {
+    font-family: 'Outfit-Bold',sans-serif;
+    margin-top: 50px;
+    line-height: 0;
+    font-size: 1.4em;
+}
+
+.first-part .left-part {
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    background: #0000;
+    display: flex;
+    margin-left: 190px;
+    flex-direction: column;
+    font-size: 1.7em;
+    box-shadow: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.first-part .logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff; /* White logo text */
+}
+
+
+.button-container{
+    display: flex;
+    gap: 30px;
+}
+.first-part .explore{
+    display: flex;
+    height: 55px;
+    display:inline-block;
+    font-weight: 700;
+    padding: 8px 16px; 
+    border: 2px solid #0fdaf0; 
+    border-radius: 8px; 
+    background-color: transparent; 
+    color: #0fdaf0; 
+    font-size: 0.6em; 
+    cursor: pointer; 
+    margin-right: 2px;
+    margin-top: 80px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.first-part .explore:hover {
+    box-shadow: #0fdaf6;
+    transform: scale(1.1);
+    background-color: transparent; /* Background color on hover */
+    color: #0fdaf6; /* Text color on hover (dark, contrasting color) */
+}
+
+.first-part .left-part .register {
+    display: inline-block;
+    padding: 12px 24px; 
+    margin-top: 80px;
+    border-radius: 8px; 
+    font-weight: 500;
+    background-color: #33e7ff; 
+    color: #000000; 
+    font-size: 0.55em; 
+    cursor: pointer; 
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.first-part .left-part .register:hover {
+    transform: scale(1.1);
+    box-shadow: #1ef7ff;
+    background-color: #33e7ff; /* Background color on hover */
+    color: #000000; /* Text color on hover (dark, contrasting color) */
+}
+
+
+.second-part {
+    background-color: black;
+    color: white;
+    margin: 0%;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Outfit-Bold',sans-serif;
+    font-size: 20px;
+    position: relative;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.4);
+} 
