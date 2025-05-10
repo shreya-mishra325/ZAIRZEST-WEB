@@ -1,5 +1,7 @@
 /*HOME PAGE CSS*/
-
+h1{
+    font-size: small;
+}
 .first-part {
     color: #ffffff;
     margin: 0%;
@@ -86,7 +88,11 @@
 }
 
 .first-part .logo {
-    font-size: 2.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-left: 50px;
+    font-size: 2em;
     font-weight: bold;
     color: #ffffff; /* White logo text */
 }
@@ -157,3 +163,101 @@
     position: relative;
     box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.4);
 } 
+
+
+/*3rd Part CSS*/
+.third-part {
+    background-color: black;
+    color: white;
+    margin: 0%;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Outfit-Bold',sans-serif;
+    font-size: 20px;
+    position: relative;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.4);
+} 
+
+.third-part {
+  background-color: #0f0707; 
+  color: #ffffff; 
+  padding: 40px; 
+  text-align: center; 
+}
+
+.events-section h2 {
+  margin-top: 50px;
+  font-size: 1.9em; 
+  margin-bottom: 10px;
+  color: #0fdaf0;
+}
+
+.events-description {
+  color: #ffffff; 
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: medium;
+}
+
+.events-grid {
+  margin-top: 40px;
+  display: flex; 
+  gap: 20px; 
+  justify-content: center;
+  margin-left: 45px;
+}
+
+.event-card {
+  height: 320px;
+  align-items: center;
+  margin-right: 50px;
+  justify-content: center;
+  position: relative;
+  background-color: #282828; 
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  width: 500px; 
+}
+
+.event-card img {
+  display: block;
+  width: 100%;
+  height: 60%; 
+  object-fit: cover;
+}
+
+.event-details {
+  padding: 10px;
+  left: 20px;
+  right: 20px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: left; 
+  background: none;
+}
+
+.event-details h3 {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.click-to-view {
+  color: #f4efef;
+  font-size: 0.9em;
+}
+
+
+.event-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
