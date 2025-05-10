@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.left{
+    color:#fff;
+    background-image: url("redgbackground.webp");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.7em;
+}
+h1{
+    margin-bottom: 2px;
+}
+.right{
+    background-color: white;
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#image{
+    height: 75px;
+    width: 75px;
+    background-image:url('QRCODE.PNG');
+}
+img{
+    height: 75px;
+    width: 75px;
+}
