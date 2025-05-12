@@ -82,6 +82,7 @@
     .form-links {
       font-size: 0.9rem;
       margin-bottom: 20px;
+      line-height: 1.5;
     }
 
     .form-links a {
@@ -94,10 +95,13 @@
     }
 
     button {
+      justify-content: center;
+      align-items: center;
       display: flex;
       margin-left: 220px;
       padding: 15px;
-      width: max-content;
+      height: 50px;
+      width: 120px;
       background-color: #38c7f7;
       border: none;
       border-radius: 8px;

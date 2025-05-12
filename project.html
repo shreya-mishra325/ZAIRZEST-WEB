@@ -23,8 +23,8 @@
     <h1 class="first"><b>Hunt the Future in the</b></h1>
     <h1 class ="second"><b>Cyber Forest</b></h1>
     <div class ="button-container">
-    <button class="explore">Explore Events</button>
-    <button class="register"><b>Register Now</b></button>
+    <a href=""><button class="explore">Explore Events</button></a>
+    <a href="registerpage.html"><button class="register"><b>Register Now</b></button></a>
     </div>
     </div>
     </div>
@@ -34,7 +34,7 @@
         <section class="hero">
             <img src="cyberpanda.png" alt="cyberpanda" class="heroimg">
             <div class="herotext">
-                <h1><div class="heading"><span class="zenheading" style="color: #12cdf2e0;">Zen 4.0 :</span> Your Guide in The Cyber Wild!</div></h1>
+                <h1><div class="heading"><span class="zenheading" style="color: #00d5ffe0;">Zen 4.0 :</span> Your Guide in The Cyber Wild!</div></h1>
                 <p>
                     'To forge the future, we must first innovate it.’ 
                     As we move beyond our journey through the tech wilderness,
@@ -99,22 +99,29 @@
         </div>
         </div>
         </div>
-    <div class="right">
-    <!--<div class="social-icons">
-        <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-x-twitter"></i></a>
-        <a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    </div>-->
 
-    <br>
-        <!-- <div class="lower-footer">
-        <div class="presented-by">
-             <p><i>presented by</i></p><img src="zairza-logo.jpg" class="presented-logo"></div>
+        <!-- music button -->
+    <audio id="music" src="music.mp3"></audio>
+    <div class="container">
+        <div id="play-btn" class="music-btn">
+             <i class="fa-solid fa-play"></i>
         </div>
     </div>
-    </p> -->
+    </footer>
+
+    <script>
+    const music=document.getElementById('music');
+    const icon=document.querySelector('i');
+    const musicbtn=document.getElementById('play-btn');
+    musicbtn.addEventListener('click', () => {
+        if(music.paused){
+            music.play();
+            musicbtn.innerHTML='<i class="fa-solid fa-pause"></i>'
+        }else{
+            music.pause();
+            musicbtn.innerHTML='<i class="fa-solid fa-play"></i>'
+        }
+    })
+</script>
 </body>
 </html>

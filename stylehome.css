@@ -10,7 +10,7 @@ h1{
     color: #ffffff;
     margin: 0%;
     padding: 0;
-    background-image: url("forest.png");
+    background-image: url("forest.png"); box-shadow: 0px 0px 25px rgba(0, 156, 156, 0.947);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,8 +27,8 @@ h1{
     top: 0;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    height: 80px;
     display: flex;
+    height: 80px;
     align-items: center;
     width: 100%;
     margin: 0;
@@ -174,8 +174,8 @@ h1{
     filter: drop-shadow(200px 0px 50000px black);
 }
 .heroimg{
-    width: 540px;
-    filter: drop-shadow(0 0 40px #00baff80);
+    width: 600px;
+    filter: drop-shadow(0px 0px 40px #00baff80);
 }
 .herotext{
     max-width: 550px;
@@ -216,7 +216,7 @@ h1{
 }
 
 .events-section h2 {
-  margin-top: 50px;
+  margin-top: 130px;
   font-size: 1.9em; 
   margin-bottom: 10px;
   color: #0fdaf0;
@@ -307,9 +307,9 @@ body {
       font-weight: 670;
     }
     .footer {
-      height: 420px;
+      height: 430px;
       background-color: #1a1a1a;
-      padding: 50px 20px;
+      padding: 55px 20px;
       text-align: left;
       display: flex;
       flex-direction: row;
@@ -327,16 +327,19 @@ body {
     }
 
     .contact {
-      margin: 20px;
+      margin: 16px;
       font-size: smaller;
     }
     .top-footer {
       display: flex;
+      gap: 550px;
+     justify-content: space-between;
       align-items: flex-start;
     }
+    
     .lower-footer {
       font-size: 12px;
-      margin-top: 30px;
+      margin-top: 0px;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
@@ -345,8 +348,8 @@ body {
 
     .presented-logo {
       top: 0;
-      height: 45px;
-      width: 45px;
+      height: 48px;
+      width: 48px;
       margin: 0%;
       padding: 0%;
       align-items: center;
@@ -362,3 +365,45 @@ body {
       display: flex;
       gap: 15px;
     }
+
+
+      .container {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 1000;
+}
+
+/*music button CSS*/
+
+.music-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #212121;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 0 0 0 rgba(0, 191, 255, 0.7);
+  animation: pulse 1s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-btn i {
+  color: #fff;
+  font-size: 24px;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 191, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 191, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 191, 255, 0);
+  }
+}
