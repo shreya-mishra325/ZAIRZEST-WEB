@@ -42,7 +42,7 @@ p {
 }
 .input-container{
     position: relative;
-    width: 500px;
+    width: 520px;
     height: 100%;
     padding: 12px;
     border-radius: 8px;
@@ -50,10 +50,15 @@ p {
 }
 .input-field{
     width:100%;
+    height: auto;
     padding:10px;
     box-sizing: border-box;
     border-radius: 6px;
     border-width: 0.2px;
+ }
+
+ ::placeholder{
+    font-size: 16px;
  }
 .password-container .toggle-password{
     position: absolute;
@@ -72,9 +77,9 @@ p {
     text-align: left;
 }
 button{
-    height: 40px;
+    height: 50px;
     width: 120px;
-    background-color: #00afff;
+    background-color: #38c3ff;
     text-align: center;
     color: #090606;
     border-radius: 8px;
