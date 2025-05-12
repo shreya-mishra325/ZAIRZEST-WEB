@@ -1,6 +1,6 @@
 /*CSS FOR REGISTER PAGE*/
 
-body{
+/*body{
     margin:0;
     padding: 0;
     height: 100%;
@@ -38,4 +38,62 @@ h1{
 img{
     height: 75px;
     width: 75px;
+}*/
+
+body{
+    margin: 0;
+    padding: 0;
+   
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+.left{
+    flex:1;
+    background-image: url("redgbackground.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align:center;
+}
+
+
+.left-text{
+    font-family: sans-serif;
+    text-align: left;
+    line-height: 0.5;
+    margin-top: 200px;
+    margin-left: 200px;
+    font-size: 1200px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 130px;
+}
+
+.right h1 {
+    color: #00bfff;
+}
+.inputbox{
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+.right-side h2 {
+    color: #00bfff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 0.5;
+    font-size: smaller;
 }

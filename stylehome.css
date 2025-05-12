@@ -2,6 +2,10 @@
 h1{
     font-size: small;
 }
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #888;
+}
 .first-part {
     color: #ffffff;
     margin: 0%;
@@ -11,7 +15,7 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     font-family: 'Outfit-Bold',sans-serif;
     font-size: 20px;
     position: relative;
@@ -26,13 +30,14 @@ h1{
     height: 80px;
     display: flex;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 2%;
     z-index: 1000;
 }
 
 .top-buttons {
+  font-size: medium;
     margin: 45px;
     display: flex;
     background-color: transparent;
@@ -88,20 +93,22 @@ h1{
 }
 
 .first-part .logo {
-    font-weight: 100;
+    font-weight: 60;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-left: 50px;
     font-size: 2em;
     font-weight: bold;
-    color: #ffffff; /* White logo text */
+    color: #ffffff; 
 }
 
 
 .button-container{
     display: flex;
-    gap: 30px;
+    gap: 37px;
+    font-size: 25px;
 }
+
 .first-part .explore{
     display: flex;
     height: 55px;
@@ -112,7 +119,7 @@ h1{
     border-radius: 8px; 
     background-color: transparent; 
     color: #0fdaf0; 
-    font-size: 0.6em; 
+    font-size: 0.65em; 
     cursor: pointer; 
     margin-right: 2px;
     margin-top: 80px;
@@ -120,21 +127,23 @@ h1{
 }
 
 .first-part .explore:hover {
-    box-shadow: #0fdaf6;
+    box-shadow: 0px 0px 25px rgba(0, 156, 156, 0.947);
     transform: scale(1.1);
-    background-color: transparent; /* Background color on hover */
-    color: #0fdaf6; /* Text color on hover (dark, contrasting color) */
+    filter: drop-shadow(0 30px 40px #00baff80);
+    background-color: transparent; 
+    color: #0fdaf6; 
 }
 
 .first-part .left-part .register {
     display: inline-block;
-    padding: 12px 24px; 
+    padding: 8px 16px; 
     margin-top: 80px;
+    height: 56px;
     border-radius: 8px; 
     font-weight: 500;
     background-color: #33e7ff; 
     color: #000000; 
-    font-size: 0.55em; 
+    font-size: 0.65em; 
     cursor: pointer; 
     border: none;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -142,27 +151,44 @@ h1{
 
 .first-part .left-part .register:hover {
     transform: scale(1.1);
-    box-shadow: #1ef7ff;
-    background-color: #33e7ff; /* Background color on hover */
-    color: #000000; /* Text color on hover (dark, contrasting color) */
+    box-shadow: 0px 0px 25px rgba(10, 195, 247, 0.947);
+    background-color: #09e9fe; 
+    color: #000000; 
+    filter: drop-shadow(60px 30px 80px #00baff80);
 }
 
 
-.second-part {
+/*2nd part CSS*/
+    body{
+    margin: 0;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    gap: 48px;
     background-color: black;
-    color: white;
-    margin: 0%;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    color: #fff;
     height: 100vh;
-    width: 100vw;
-    font-family: 'Outfit-Bold',sans-serif;
-    font-size: 20px;
-    position: relative;
-    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.4);
-} 
+    filter: drop-shadow(200px 0px 50000px black);
+}
+.heroimg{
+    width: 540px;
+    filter: drop-shadow(0 0 40px #00baff80);
+}
+.herotext{
+    max-width: 550px;
+    margin-left: 20px;
+}
+.highlight{
+    color:#00baff80 ;
+}
+
+.heading {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
 
 
 /*3rd Part CSS*/
@@ -212,7 +238,7 @@ h1{
 }
 
 .event-card {
-  height: 320px;
+  height: 300px;
   align-items: center;
   margin-right: 50px;
   justify-content: center;
@@ -223,14 +249,14 @@ h1{
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  width: 500px; 
+  width: 510px; 
 }
 
-.event-card img {
-  display: block;
-  width: 100%;
-  height: 60%; 
-  object-fit: cover;
+h3 {
+  font-size: 60px;
+  margin-top: 170px;
+  text-shadow: #000000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .event-details {
@@ -252,7 +278,8 @@ h1{
 
 .click-to-view {
   color: #f4efef;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  letter-spacing: 1;
 }
 
 
@@ -261,3 +288,77 @@ h1{
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
 }
+
+
+/*About Us Page Footer CSS*/
+body {
+      margin: 0%;
+      height: 1200px;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #222121;
+      color: white;
+    }
+
+    .footer-heading {
+      margin-top: 40px;
+      font-size: 40px;
+      margin-bottom: 20px;
+      margin-left: 50px;
+      font-weight: 670;
+    }
+    .footer {
+      height: 420px;
+      background-color: #1a1a1a;
+      padding: 50px 20px;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .footer h2 {
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    .footer p {
+      margin-left: 50px;
+      line-height: 1.6;
+      font-size: 1em;
+    }
+
+    .contact {
+      margin: 20px;
+      font-size: smaller;
+    }
+    .top-footer {
+      display: flex;
+      align-items: flex-start;
+    }
+    .lower-footer {
+      font-size: 12px;
+      margin-top: 30px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      
+    }
+
+    .presented-logo {
+      top: 0;
+      height: 45px;
+      width: 45px;
+      margin: 0%;
+      padding: 0%;
+      align-items: center;
+    }
+    .right{
+      margin-bottom: 40px;
+    }
+    
+    .presented-by {
+      font-weight: semibold;
+      margin-left: 800px;
+      font-size: large;
+      display: flex;
+      gap: 15px;
+    }
