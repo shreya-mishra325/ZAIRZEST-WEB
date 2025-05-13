@@ -17,8 +17,9 @@
   }
 }
 
-*{
+body{
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 * {
     scrollbar-width: thin;
@@ -155,10 +156,10 @@ div {
     display:inline-block;
     font-weight: 700;
     padding: 8px 16px; 
-    border: 2px solid #0fb8f0; 
+    border: 2px solid #08bffc; 
     border-radius: 8px; 
     background-color: transparent; 
-    color: #0fdaf0; 
+    color: #01c0eb; 
     font-size: 0.65em; 
     cursor: pointer; 
     margin-right: 2px;
@@ -171,7 +172,7 @@ div {
     transform: scale(1.1);
     filter: drop-shadow(0 30px 40px #00baff80);
     background-color: transparent; 
-    color: #0fdaf6; 
+    color: #08cffc; 
 }
 
 .first-part .left-part .register {
@@ -181,7 +182,7 @@ div {
     height: 56px;
     border-radius: 8px; 
     font-weight: 500;
-    background-color: #33e7ff; 
+    background-color: #03e8f8; 
     color: #000000; 
     font-size: 0.65em; 
     cursor: pointer; 

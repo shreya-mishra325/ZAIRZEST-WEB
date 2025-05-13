@@ -25,7 +25,7 @@
     <h1 class="first"><b>Hunt the Future in the</b></h1>
     <h1 class ="second"><b>Cyber Forest</b></h1>
     <div class ="button-container">
-    <a href=""><button class="explore">Explore Events</button></a>
+    <button onclick="scrollToThirdPage()" class="explore">Explore Events</button>
     <a href="registerpage.html"><button class="register"><b>Register Now</b></button></a>
     </div>
     </div>
@@ -51,6 +51,7 @@
     </main>
 
     <!--Third Page-->
+    <div id="page3" class="page">
     <div class="third-part">
     <div class = "events-section">
     <h2><b>Events for you</b></h2>
@@ -62,7 +63,7 @@
      </div>
     <div class = "events-grid">
         <a href="techevents.html" class="event-card" style="background-image: url('tech-events.jpg'); background-size: cover;";> 
-            <div class ="event-details">
+            <div class ="event-details" data-aos="flip-left">
     <h3>Tech Events</h3>
             <p class ="click-to-view">Click to view</p>
         </div>
@@ -74,6 +75,7 @@
             </div>
         </div>
         </a>
+    </div>
     </div>
     </div>
 
@@ -111,7 +113,7 @@
     </div>
     </footer>
 
-    <script>
+<script>
     const music=document.getElementById('music');
     const icon=document.querySelector('i');
     const musicbtn=document.getElementById('play-btn');
@@ -125,8 +127,17 @@
         }
     })
 
+     //   <!--Explore events button functionality-->
+        function scrollToThirdPage() {
+      const page3 = document.getElementById('page3');
+      if (page3) {
+        page3.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        alert("Page 3 not found!");
+      }
+    }
     // <!--tranisition effect of hero to be added-->
-
+        
 </script>
 </body>
 </html>
