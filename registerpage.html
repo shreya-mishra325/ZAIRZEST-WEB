@@ -43,7 +43,47 @@
         </div>
     </div>
     </div>
-   
-    
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+  const signupForm = document.querySelector('#form form');
+
+  signupForm.addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    // Get the input field values
+    const nameInput = signupForm.querySelector('input[placeholder="Name"]');
+    const registrationNumberInput = signupForm.querySelector('input[placeholder="Registration Number"]');
+    const emailInput = signupForm.querySelector('input[placeholder="Email here"]');
+    const passwordInput = signupForm.querySelector('input[placeholder="Create Your Own Password"]');
+
+    const name = nameInput.value.trim();
+    const registrationNumber = registrationNumberInput.value.trim();
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
+
+    // Basic validation 
+    if (!name || !registrationNumber || !email || !password) {
+      alert('Please fill in all the fields.');
+      return;
+    }
+
+    // Store user data 
+    const userData = {
+      name: name,
+      registrationNumber: registrationNumber,
+      email: email,
+      password: password
+    };
+
+    localStorage.setItem('userData_' + email, JSON.stringify(userData));
+    localStorage.setItem('currentUserEmail', email); 
+
+    alert('Registered Successfully!');
+
+    // Redirect to the sign-in page
+    window.location.href = 'sign in.html';
+  });
+});
+</script>  
 </body>
 </html>
