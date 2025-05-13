@@ -3,6 +3,7 @@
 body{
     margin: 0;
     padding: 0;
+    
 }
 .container{
     display: flex;
@@ -20,17 +21,21 @@ body{
 }
 .left-text{
     text-align: left;
-    margin-top: 200px;
-    margin-left: 230px;
+    margin-top: 230px;
+    margin-left: 190px;
     font-size: larger;
+    font-family: 'Inter', sans-serif;
 }
 .left h1 {
-    font-size: 60px;
-    line-height: 0.5;
+    font-weight: 780;
+    font-size: 53px;
+    line-height: 0.6;
  }
+
 p {
     line-height: 0.2;
     font-size: smaller;
+    font-weight: 500;
 }
 .right{
     width: 580px;
