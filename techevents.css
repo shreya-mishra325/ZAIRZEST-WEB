@@ -12,7 +12,7 @@
       color: #fff;
     }
     .logo {
-      margin-left: 40px;
+      margin-left: 80px;
     }
     .top-navigation{
       position: fixed;
@@ -28,7 +28,7 @@
       z-index: 1000;
     }
     .top-buttons{
-      margin-right: 40px;
+      margin-right: 80px;
       list-style: none;
       display: flex;
       gap: 20px;
@@ -38,6 +38,9 @@
       color: white;
       font-weight: 500;
     }
+    .nav-buttons:hover {
+    color: #282eeb;
+}
     
     .cardcontainer {
       display: grid;
@@ -161,7 +164,7 @@
       font-weight: 670;
     }
     .footer {
-      height: 430px;
+      height: 320px;
       background-color: #1a1a1a;
       padding: 55px 20px;
       text-align: left;
