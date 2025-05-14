@@ -29,6 +29,7 @@ body {
       width: 450px;
     }
 .top-navigation{
+      font-family: 'Outfit', sans-serif;
       position: fixed;
       top: 0;
       width: 100%;
@@ -48,6 +49,7 @@ body {
       gap: 20px;
     }
     .nav-buttons{
+      font-family: 'Outfit', sans-serif;
       text-decoration: none;
       color: white;
       font-weight: 500;
