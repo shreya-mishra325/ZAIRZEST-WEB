@@ -34,7 +34,7 @@
         <div class="input-container"><input class="input-field" type="text" placeholder="Registration Number" required></div>
         <div class="input-container"><input class="input-field" type="email" placeholder="Email here" required></div>
         <div class="input-container password-container">
-            <input type="password" placeholder="Create Your Own Password" class="input-field" required>
+          <input type="password" placeholder="Create Your Own Password" class="input-field" required>
         </div>        
         <br>
         <Button type="submit" style="font-size: 15px;"><b>Sign Up</b></Button>
@@ -43,6 +43,7 @@
         </div>
     </div>
     </div>
+
 <script>
  document.addEventListener('DOMContentLoaded', function() {
   const signupForm = document.querySelector('#form form');
@@ -72,7 +73,7 @@
       name: name,
       registrationNumber: registrationNumber,
       email: email,
-      password: password
+      password: password,
     };
 
     localStorage.setItem('userData_' + email, JSON.stringify(userData));

@@ -9,11 +9,6 @@
   <link rel="stylesheet" href="media-queries.css">
 </head>
 <body>
-  <script>
-        function redirectToProfile() {
-            window.location.href = "project.html"; // Redirect to profile.html
-        }
-    </script>
   <div class="left-side">
     <h1>Enter the untamed<br>wilderness with<br><span>ZAIRZA</span></h1>
     <p>Release all your stress with the exciting Tech and Fun events in the most awaited fest. Zairzest 4.0 <br> presented by Zairza.</p>
@@ -34,50 +29,33 @@
         Don't remember Password? <a href="#">Reset Password</a><br>
         Not a Member yet? <a href="registerpage.html">Sign Up</a>
       </div>
-      <div class="buttondiv"><button type="submit">Sign In</button></div>
+      <div class="buttondiv"><button onclick="goToProfilePage()" type="submit">Sign In</button></div>
     </form>
   </div>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+   document.addEventListener('DOMContentLoaded', () => {
             const signInForm = document.getElementById('signInForm');
-            const warningMessageElement = document.getElementById('warningMessage');
+            const emailInput = document.getElementById('email');
+            const passwordInput = document.getElementById('password');
 
-            signInForm.addEventListener('submit', function(event) {
+            signInForm.addEventListener('submit', (event) => {
                 event.preventDefault();
 
-                const emailInput = document.getElementById('email');
-                const passwordInput = document.getElementById('password');
-                const email = emailInput.value.trim();
-                const password = passwordInput.value.trim();
-
-                // Basic validation
-                if (!email || !password) {
-                    displayWarning('Please enter both email and password.');
+                if (!emailInput.value.trim()) {
+                    alert('Please enter your email.');
+                    return;
+                }
+                if (!passwordInput.value.trim()) {
+                    alert('Please enter your password.');
                     return;
                 }
 
-                // Retrieve user data from local storage
-                const storedUserData = localStorage.getItem('userData_' + email);
+                console.log('Login successful');
+                alert('Login successful!'); 
 
-                if (storedUserData) {
-                    const userData = JSON.parse(storedUserData);
-                    if (userData.password === password) {
-                        displayWarning('');
-                        alert('Login successful!');
-                        localStorage.setItem('currentUserEmail', email);
-                        redirectToProfile();
-                    } else {
-                        displayWarning('Invalid password. Please try again.');
-                    }
-                } else {
-                    displayWarning('User not found. Please sign up.');
-                }
+                window.location.href = 'project.html'; 
             });
-
-            function displayWarning(message) {
-                warningMessageElement.textContent = message;
-            }
         });
   </script>
 </body>
