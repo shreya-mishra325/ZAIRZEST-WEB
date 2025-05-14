@@ -214,22 +214,6 @@
         }
     })
 
-    // <!--loading button functionality-->
-    document.addEventListener('DOMContentLoaded', () => {
-        const navLinks = document.querySelectorAll('.nav-buttons');
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault(); 
-
-                const targetURL = this.getAttribute('href');
-
-                localStorage.setItem('targetURL', targetURL);
-
-                window.location.href = '/load.html'; 
-            });
-        });
-    });
   </script>
 
 </body>
