@@ -1,6 +1,41 @@
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 black;
+}
+.logo {
+      margin-left: 80px;
+    }
+    .top-navigation{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 80px;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding:0px;
+      z-index: 1000;
+    }
+    .top-buttons{
+      margin-right: 80px;
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-buttons{
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+    .nav-buttons:hover {
+    color: #282eeb;
+}
+
 body {
   margin: 0;
-  background-image:url('WhatsApp Image 2025-05-13 at 21.12.34 (1).jpeg');
+  background-image:url('profilepagepanda.png'); background-color: black;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -16,7 +51,7 @@ body {
 }
 
 .box {
-  background-color: rgba(0, 0, 0, 0.9); 
+  background: linear-gradient(to bottom, #00bbff, rgb(1, 1, 1));
   width: 300px;
   height: 350px;
   border-radius: 12px;
@@ -30,6 +65,7 @@ body {
 }
 
 .box img {
+  margin-left: 32px;
   max-width: 80%;
   max-height: 100%;
   object-fit: cover;
@@ -38,4 +74,6 @@ body {
     color:white;
     margin-block: 8px; 
     font-size: 1rem;
+    line-height: 0.5em;
 }
+

@@ -2,26 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>profilepage</title>
+  <title>Zairzest 4.0</title>
   <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-
+  <!--Zen ID Profile Page-->
+      <div class="top-navigation">
+    <div class="logo"><a href="load.html"><img src="Zairzest4.0.png"></a></div>
+    <ul class ="top-buttons">
+    <ul><a href="about us.html" class ="nav-buttons">About Us</a></ul>
+    <ul><a href="profile2.html" class ="nav-buttons"  style="color: rgb(0, 208, 255);">Hi, Shreya Mishra</a></ul>
+    <ul><a href="sign in.html" class ="nav-buttons">Logout</a></button></ul>
+  </ul> 
+  </div>
   <div class="container">
     <div class="box">
-      <img src="c:\Users\user\Downloads\WhatsApp Image 2025-05-13 at 21.48.33.jpeg" alt="Image 1">
-      <p class="caption">PAYMENT</p>
+      <img src="QRCODE.PNG" style="border-radius: 9px;" alt="Image 1">
+      <p class="caption" style="color: rgb(0, 208, 255); font-size: 1.1em;">PAYMENT</p>
     </div>
     <div class="box">
-      <img src="c:\Users\user\Downloads\WhatsApp Image 2025-05-13 at 21.48.33 (1).jpeg" alt="Image 2">
-      <p class="caption">SHREYA MOHANTY</p>
-      <p class="caption">ZenID-Z2024668</p>
+      <img src="ZenID.jpg" style="border-radius: 9px;" alt="Image 2">
+      <p class="caption" style="font-size: 20px;">Shreya Mishra</p>
+      <h2 class="caption" style="color: rgb(0, 208, 255); font-size: 1.3em;">ZenID-Z2024668</h2>
     </div>
     <div class="box">
-      <img src="c:\Users\user\Downloads\WhatsApp Image 2025-05-13 at 21.48.34.jpeg" alt="Image 3">
-      <p class="caption">ZAIRZEST 4.0 INFO</p>
+      <img src="whatsappQR.jpg" style="border-radius: 9px; width: 75%;" alt="Image 3">
+      <p class="caption" style="color: rgb(0, 208, 255); font-size: 1.1em;">ZAIRZEST 4.0 INFO</p>
     </div>
   </div>
+<!-- music button -->
+    <audio id="music" src="music.mp3"></audio>
+    <div class="container">
+        <div id="play-btn" class="music-btn">
+             <i class="fa-solid fa-play"></i>
+        </div>
+    </div>
+    </footer>
 
+<script>
+    const music=document.getElementById('music');
+    const icon=document.querySelector('i');
+    const musicbtn=document.getElementById('play-btn');
+    musicbtn.addEventListener('click', () => {
+        if(music.paused){
+            music.play();
+            musicbtn.innerHTML='<i class="fa-solid fa-pause"></i>'
+        }else{
+            music.pause();
+            musicbtn.innerHTML='<i class="fa-solid fa-play"></i>'
+        }
+    })
+
+     //   <!--Explore events button functionality-->
+        function scrollToThirdPage() {
+      const page3 = document.getElementById('page3');
+      if (page3) {
+        page3.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        alert("Page 3 not found!");
+      }
+    }
+    // <!--tranisition effect of hero to be added-->
+        
+</script>
 </body>
 </html>
