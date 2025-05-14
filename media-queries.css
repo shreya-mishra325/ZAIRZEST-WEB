@@ -2,85 +2,85 @@
 
 /* Styles for screens up to 1200px (typical smaller desktops/large tablets) */
 @media screen and (max-width: 1200px) {
-    .top-buttons {
+    .index .top-buttons {
         margin-left: auto; /* Push buttons to the right */
         margin-right: 20px; /* Add some right margin */
         gap: 30px;
     }
 
-    .first-part .left-part {
+    .index .first-part .left-part {
         margin-left: 100px;
         font-size: 1.5em;
     }
 
-    .first {
+    .index .first {
         font-size: 1.2em;
         margin-top: 200px;
     }
 
-    .second {
+    .index .second {
         font-size: 1.2em;
         margin-top: 30px;
     }
 
-    .button-container {
+    .index .button-container {
         gap: 20px;
         font-size: 20px;
     }
 
-    .hero {
+    .index .hero {
         padding: 40px 20px;
         gap: 20px;
     }
 
-    .heroimg {
+    .index .heroimg {
         max-width: 50%;
     }
 
-    .heading {
+    .index .heading {
         font-size: 36px;
     }
 
-    .events-grid {
+    .index .events-grid {
         margin-left: 20px;
     }
 
-    .event-card {
+    .index .event-card {
         width: 400px;
         height: 280px;
         margin-right: 30px;
     }
 
-    h3 {
+    .index h3 {
         font-size: 48px;
         margin-top: 150px;
     }
 
-    .footer {
+    .index .footer {
         padding: 40px 20px;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .top-footer {
+    .index .top-footer {
         flex-direction: column;
         gap: 20px;
         align-items: flex-start;
     }
 
-    .lower-footer {
+    .index .lower-footer {
         margin-top: 20px;
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
 
-    .presented-by {
+    .index .presented-by {
         margin-left: 0;
         margin-top: 15px;
     }
 
-    .container {
+    .index .container {
         right: 20px;
         bottom: 20px;
     }
@@ -88,7 +88,7 @@
 
 /* For screens up to 768px (typical tablets) */
 @media screen and (max-width: 768px) {
-    .top-navigation {
+   .index .top-navigation {
         flex-direction: column;
         align-items: center;
         height: auto;
@@ -96,13 +96,13 @@
         text-align: center;
     }
 
-    .logo {
+    .index .logo {
         margin-left: 0;
         margin-bottom: 15px;
         font-size: 1.8em;
     }
 
-    .top-buttons {
+    .index .top-buttons {
         margin-left: 0;
         margin-right: 0;
         margin-top: 20px;
@@ -111,16 +111,16 @@
         gap: 20px;
     }
 
-    .nav-buttons {
+    .index .nav-buttons {
         font-size: medium;
     }
 
-    .first-part {
+    .index .first-part {
         height: auto;
         padding-bottom: 50px;
     }
 
-    .first-part .left-part {
+    .index .first-part .left-part {
         margin-left: 20px;
         margin-right: 20px;
         text-align: center;
@@ -128,19 +128,19 @@
         font-size: 1.3em;
     }
 
-    .first {
+    .index .first {
         font-size: 1.1em;
         margin-top: 150px;
         line-height: 1;
     }
 
-    .second {
+    .index .second {
         font-size: 1.1em;
         margin-top: 20px;
         line-height: 1;
     }
 
-    .button-container {
+    .index .button-container {
         flex-direction: column;
         align-items: center;
         gap: 15px;
@@ -148,15 +148,15 @@
         margin-top: 40px;
     }
 
-    .first-part .explore,
-    .first-part .left-part .register {
+    .index .first-part .explore,
+    .index .first-part .left-part .register {
         width: 80%;
         font-size: 0.8em;
         padding: 10px 20px;
         margin-top: 20px;
     }
 
-    .hero {
+    .index .hero {
         flex-direction: column;
         text-align: center;
         padding: 30px 20px;
@@ -164,97 +164,97 @@
         height: auto;
     }
 
-    .heroimg {
+    .index .heroimg {
         max-width: 80%;
     }
 
-    .herotext {
+    .index .herotext {
         margin-left: 0;
     }
 
-    .heading {
+    .index .heading {
         font-size: 30px;
     }
 
-    .third-part {
+    .index .third-part {
         padding: 30px 20px;
         height: auto;
     }
 
-    .events-section h2 {
+    .index .events-section h2 {
         margin-top: 80px;
         font-size: 1.7em;
         margin-bottom: 15px;
     }
 
-    .events-grid {
+    .index .events-grid {
         flex-direction: column;
         align-items: center;
         margin-left: 0;
         gap: 30px;
     }
 
-    .event-card {
+    .index .event-card {
         width: 90%;
         height: auto;
         margin-right: 0;
     }
 
-    h3 {
+    .index h3 {
         font-size: 36px;
         margin-top: 20px;
     }
 
-    .event-details {
+    .index .event-details {
         position: static;
         text-align: center;
         padding: 20px;
         margin: 0;
     }
 
-    .event-details h3 {
+    .index .event-details h3 {
         text-align: center;
     }
 
-    .footer {
+    .index .footer {
         padding: 30px 20px;
     }
 
-    .footer-heading {
+    .index .footer-heading {
         font-size: 32px;
         margin-left: 0;
         text-align: center;
     }
 
-    .top-footer {
+    .index.top-footer {
         align-items: center;
     }
 
-    .top-footer p {
+    .index .top-footer p {
         margin-left: 0;
         text-align: center;
     }
 
-    .lower-footer {
+    .index .lower-footer {
         align-items: center;
         text-align: center;
     }
 
-    .presented-by {
+    .index .presented-by {
         margin-left: 0;
         margin-top: 20px;
         flex-direction: column;
         align-items: center;
     }
 
-    .container {
+    .index .container {
         right: 15px;
         bottom: 15px;
         width: 50px;
         height: 50px;
     }
 
-    .music-btn i {
+    .index .music-btn i {
         font-size: 20px;
     }
 }
@@ -301,73 +301,73 @@
 
 /* For screens up to 1200px */
 @media screen and (max-width: 1200px) {
-    .first-part {
+  .index .first-part {
         height: auto; /* Adjust height */
         padding-bottom: 30px;
     }
 
-    .top-navigation {
+   .index .top-navigation {
         padding: 1.5%; /* Adjust padding */
     }
 
-    .top-buttons {
+   .index .top-buttons {
         margin-left: auto;
         margin-right: 20px;
         gap: 30px;
         margin-top: 15px;
     }
 
-    .text-part {
+   .index .text-part {
         margin-left: 50px;
         margin-right: 50px;
         padding: 3rem;
     }
 
-    h1 {
+   .index h1 {
         font-size: 2.2em;
     }
 
-    .first-part p {
+   .index .first-part p {
         font-size: 16px;
         margin-top: 25px;
         line-height: 1.3;
     }
 
-    .image {
+   .index .image {
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    .first-part img {
+   .index .first-part img {
         height: auto;
         width: 100%;
         margin-bottom: 30px;
     }
 
-    .footer {
+   .index .footer {
         padding: 40px 20px;
         flex-direction: column;
         align-items: flex-start;
         height: auto; /* Adjust height */
     }
 
-    .top-footer {
+    .index .top-footer {
         flex-direction: column;
         gap: 20px;
         align-items: flex-start;
     }
 
-    .top-footer p {
+   .index .top-footer p {
         margin-left: 0;
     }
 
-    .lower-footer {
+   .index .lower-footer {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
 
-    .presented-by {
+   .index .presented-by {
         margin-left: 0;
         margin-top: 15px;
     }
@@ -375,7 +375,7 @@
 
 /* For screens up to 768px (tablets) */
 @media screen and (max-width: 768px) {
-    .top-navigation {
+  .index  .top-navigation {
         flex-direction: column;
         align-items: center;
         height: auto;
@@ -384,13 +384,13 @@
         text-align: center;
     }
 
-    .logo {
+  .index .logo {
         margin-left: 0;
         margin-bottom: 10px;
         font-size: 1.8em;
     }
 
-    .top-buttons {
+  .index .top-buttons {
         margin-left: 0;
         margin-right: 0;
         margin-top: 15px;
@@ -399,115 +399,115 @@
         gap: 15px;
     }
 
-    .nav-buttons {
+  .index .nav-buttons {
         font-size: medium;
     }
 
-    .text-part {
+  .index  .text-part {
         margin-left: 20px;
         margin-right: 20px;
         padding: 2rem;
     }
 
-    h1 {
+  .index  h1 {
         font-size: 2em;
         text-align: center;
     }
 
-    .first-part p {
+  .index  .first-part p {
         font-size: 15px;
         margin-top: 20px;
         text-align: left;
     }
 
-    .image {
+  .index  .image {
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    .footer {
+  .index  .footer {
         padding: 30px 20px;
     }
 
-    .footer-heading {
+  .index  .footer-heading {
         font-size: 32px;
         margin-left: 0;
         text-align: center;
     }
 
-    .top-footer p {
+  .index  .top-footer p {
         margin-left: 0;
         text-align: center;
     }
 
-    .lower-footer {
+  .index  .lower-footer {
         gap: 20px;
     }
 
-    .presented-by {
+  .index  .presented-by {
         align-items: center;
     }
 }
 
 /* For screens up to 480px (phones) */
 @media screen and (max-width: 480px) {
-    .logo {
+  .index  .logo {
         font-size: 1.5em;
         margin-left: 0;
     }
 
-    .top-buttons {
+  .index  .top-buttons {
         gap: 10px;
         margin-top: 10px;
     }
 
-    .nav-buttons {
+   .index .nav-buttons {
         font-size: small;
         padding: 8px 12px;
     }
 
-    .text-part {
+  .index  .text-part {
         margin-left: 15px;
         margin-right: 15px;
         padding: 1.5rem;
     }
 
-    h1 {
+  .index  h1 {
         font-size: 1.8em;
     }
 
-    .first-part p {
+  .index  .first-part p {
         font-size: 14px;
         margin-top: 15px;
     }
 
-    .image {
+  .index  .image {
         margin-left: 5px;
         margin-right: 5px;
     }
 
-    .footer {
+  .index  .footer {
         padding: 20px 15px;
     }
 
-    .footer-heading {
+  .index  .footer-heading {
         font-size: 28px;
     }
 
-    .top-footer p {
+  .index  .top-footer p {
         font-size: 0.9em;
     }
 
-    .lower-footer {
+  .index  .lower-footer {
         gap: 15px;
     }
 
-    .presented-by {
+  .index  .presented-by {
         font-size: medium;
         gap: 10px;
     }
 
-    .presented-logo {
+  .index  .presented-logo {
         max-width: 40px;
     }
 }
@@ -517,12 +517,12 @@
 
 /* For screens up to 1200px */
 @media screen and (max-width: 1200px) {
-    .container {
+  .regd .container {
         flex-direction: column; /* Stack left and right sections */
         height: auto;
     }
 
-    .left {
+  .regd .left {
         flex: none; /* Don't take up full flex space */
         width: 100%;
         min-height: 300px; /* Ensure some height */
@@ -530,52 +530,52 @@
         text-align: center;
     }
 
-    .left-text {
+  .regd  .left-text {
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
         text-align: center;
     }
 
-    .left h1 {
+  .regd  .left h1 {
         font-size: 40px;
         line-height: 1.2;
     }
 
-    .left p {
+  .regd  .left p {
         font-size: 15px;
         line-height: 1.4;
         margin-top: 20px;
     }
 
-    .right {
+  .regd  .right {
         width: 100%;
         padding: 40px 20px;
     }
 
-    .input-container {
+  .regd  .input-container {
         width: 90%;
         margin: 15px auto;
     }
 
-    .right h1 {
+  .regd  .right h1 {
         font-size: 24px;
         text-align: center;
     }
 
-    .right p {
+  .regd  .right p {
         text-align: center;
         font-size: 16px;
     }
 
-    button {
+  .regd  button {
         width: 100%;
         max-width: 300px;
         height: 45px;
         font-size: 14px;
     }
 
-    #rightlink {
+  .regd  #rightlink {
         margin-top: 30px;
         font-size: medium;
     }
@@ -583,79 +583,79 @@
 
 /* For screens up to 768px (tablets) */
 @media screen and (max-width: 768px) {
-    .left h1 {
+  .regd  .left h1 {
         font-size: 32px;
     }
 
-    .left p {
+  .regd  .left p {
         font-size: 14px;
     }
 
-    .right h1 {
+  .regd  .right h1 {
         font-size: 22px;
     }
 
-    .right p {
+  .regd  .right p {
         font-size: 15px;
     }
 
-    .input-container {
+  .regd  .input-container {
         width: 95%;
     }
 
-    button {
+  .regd  button {
         font-size: 13px;
         height: 40px;
     }
 
-    #rightlink {
+  .regd  #rightlink {
         font-size: small;
     }
 }
 
 /* For screens up to 480px (phones) */
 @media screen and (max-width: 480px) {
-    .left {
+  .regd  .left {
         padding: 30px 15px;
     }
 
-    .left-text {
+  .regd  .left-text {
         margin-top: 30px;
     }
 
-    .left h1 {
+  .regd  .left h1 {
         font-size: 28px;
     }
 
-    .left p {
+  .regd  .left p {
         font-size: 13px;
     }
 
-    .right {
+  .regd  .right {
         padding: 30px 15px;
     }
 
-    .right h1 {
+  .regd  .right h1 {
         font-size: 20px;
     }
 
-    .right p {
+  .regd  .right p {
         font-size: 14px;
     }
 
-    .input-container {
+  .regd  .input-container {
         width: 100%;
     }
 
-    .input-field::placeholder {
+  .regd  .input-field::placeholder {
         font-size: 14px;
     }
 
-    button {
+  .regd  button {
         font-size: 12px;
         height: 35px; }
 
-    #rightlink {
+  .regd  #rightlink {
         font-size: smaller;
     }
 }
@@ -672,24 +672,24 @@
 
 /* For screens up to 1200px */
 @media screen and (max-width: 1200px) {
-    body {
+  .login  body {
         flex-direction: column; /* Stack left and right sections */
         min-height: auto;
     }
 
-    .left-side {
+  .login  .left-side {
         width: 100%;
         padding: 40px;
         text-align: center;
     }
 
-    .left-side h1 {
+  .login  .left-side h1 {
         font-size: 2.8rem;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .left-side p {
+  .login  .left-side p {
         font-size: 1.0rem;
         max-width: 80%;
         margin-left: auto;
@@ -697,44 +697,44 @@
         margin-top: 20px;
     }
 
-    .right-side {
+  .login  .right-side {
         width: 100%;
         padding: 30px;
     }
 
-    .right-side h2 {
+  .login  .right-side h2 {
         font-size: 1.6rem;
         text-align: center;
     }
 
-    .right-side p {
+  .login  .right-side p {
         text-align: center;
         font-size: 0.9rem;
         margin-bottom: 15px;
     }
 
-    .form-group {
+  .login  .form-group {
         margin-bottom: 12px;
     }
 
-    input[type="email"],
-    input[type="password"] {
+  .login  input[type="email"],
+  input[type="password"] {
         padding: 10px;
         font-size: 0.9rem;
     }
 
-    .form-links {
+  .login  .form-links {
         font-size: 0.8rem;
         text-align: center;
         margin-bottom: 15px;
     }
 
-    .buttondiv {
+  .login  .buttondiv {
         display: flex;
         justify-content: center;
     }
 
-    button {
+  .login  button {
         margin-left: 0;
         padding: 12px 25px;
         font-size: 0.9rem;
@@ -744,33 +744,33 @@
 
 /* For screens up to 768px (tablets) */
 @media screen and (max-width: 768px) {
-    .left-side h1 {
+  .login  .left-side h1 {
         font-size: 2.4rem;
     }
 
-    .left-side p {
+  .login  .left-side p {
         font-size: 0.9rem;
     }
 
-    .right-side h2 {
+  .login  .right-side h2 {
         font-size: 1.4rem;
     }
 
-    .right-side p {
+  .login  .right-side p {
         font-size: 0.85rem;
     }
 
-    input[type="email"],
+  .login  input[type="email"],
     input[type="password"] {
         padding: 10px;
         font-size: 0.85rem;
     }
 
-    .form-links {
+  .login  .form-links {
         font-size: 0.75rem;
     }
 
-    button {
+  .login  button {
         padding: 10px 20px;
         font-size: 0.85rem;
     }
@@ -778,41 +778,41 @@
 
 /* For screens up to 480px (phones) */
 @media screen and (max-width: 480px) {
-    .left-side {
+  .login  .left-side {
         padding: 30px 20px;
     }
 
-    .left-side h1 {
+  .login  .left-side h1 {
         font-size: 2.0rem;
     }
 
-    .left-side p {
+  .login  .left-side p {
         font-size: 0.8rem;
     }
 
-    .right-side {
+  .login  .right-side {
         padding: 20px;
     }
 
-    .right-side h2 {
+  .login  .right-side h2 {
         font-size: 1.2rem;
     }
 
-    .right-side p {
+  .login  .right-side p {
         font-size: 0.8rem;
     }
 
-    input[type="email"],
+  .login  input[type="email"],
     input[type="password"] {
         padding: 8px;
         font-size: 0.8rem;
     }
 
-    .form-links {
+  .login  .form-links {
         font-size: 0.7rem;
     }
 
-    button {
+  .login  button {
         padding: 10px 15px;
         font-size: 0.8rem;
     }
@@ -829,25 +829,25 @@
 /* --- Responsive Styles for Tech Events Page --- */
 
 @media screen and (max-width: 1200px) {
-  .cardcontainer {
+.tech  .cardcontainer {
     max-width: 90%;
     column-gap: 60px;
   }
 
-  .column {
+.tech  .column {
     gap: 60px;
   }
 
-  .card-inner {
+.tech  .card-inner {
     min-height: 500px;
   }
 
-  .card-back p {
+.tech  .card-back p {
     top: 150px;
     font-size: 0.9em;
   }
 
-  .card-back button {
+.tech  .card-back button {
     bottom: 150px;
     right: 100px;
     font-size: 0.9em;
@@ -856,26 +856,26 @@
 
 /* For screens up to 992px (larger tablets) */
 @media screen and (max-width: 992px) {
-  .cardcontainer {
+.tech  .cardcontainer {
     grid-template-columns: 1fr; /* Single column */
     column-gap: 0;
     max-width: 600px;
   }
 
-  .column {
+.tech  .column {
     gap: 40px;
   }
 
-  .card-inner {
+.tech  .card-inner {
     min-height: 450px;
   }
 
-  .card-back p {
+.tech  .card-back p {
     top: 130px;
     font-size: 0.85em;
   }
 
-  .card-back button {
+.tech  .card-back button {
     bottom: 130px;
     right: 50%;
     transform: translateX(50%);
@@ -884,23 +884,23 @@
 
 /* For screens up to 768px (typical tablets) */
 @media screen and (max-width: 768px) {
-  #heading h1 {
+.tech  #heading h1 {
     font-size: 28px;
   }
 
-  .card-inner {
+.tech  .card-inner {
     min-height: 400px;
   }
 
-  .card-front .info h3 {
+.tech  .card-front .info h3 {
     font-size: 1.2em;
   }
 
-  .card-front .info p {
+.tech  .card-front .info p {
     font-size: 0.9em;
   }
 
-  .card-front .info button {
+.tech  .card-front .info button {
     bottom: 80px;
     right: 10px;
     font-size: 14px;
@@ -908,84 +908,84 @@
     height: 25px;
   }
 
-  .card-back p {
+.tech  .card-back p {
     top: 110px;
     font-size: 0.8em;
     padding: 15px;
   }
 
-  .card-back button {
+.tech  .card-back button {
     bottom: 110px;
     font-size: 0.8em;
     padding: 8px;
   }
 
-  .footer-heading {
+.tech  .footer-heading {
     font-size: 32px;
     margin-left: 0;
     text-align: center;
   }
 
-  .top-footer {
+.tech  .top-footer {
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
 
-  .top-footer p {
+.tech  .top-footer p {
     margin-left: 0;
     text-align: center;
   }
 
-  .lower-footer {
+.tech  .lower-footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
     text-align: center;
   }
 
-  .presented-by {
+.tech  .presented-by {
     margin-left: 0;
     margin-top: 15px;
     flex-direction: column;
     align-items: center;
   }
 
-  .musiccontainer {
+.tech  .musiccontainer {
     right: 15px;
     bottom: 15px;
     width: 50px;
     height: 50px;
   }
 
-  .music-btn i {
+.tech  .music-btn i {
     font-size: 20px;
   }
 }
 
 /* For screens up to 480px (phones) */
 @media screen and (max-width: 480px) {
-  #heading h1 {
+.tech  #heading h1 {
     font-size: 24px;
   }
 
-  .card-inner {
+.tech  .card-inner {
     min-height: 350px;
   }
 
-  .card-front img {
+.tech  .card-front img {
     height: 300px;
   }
 
-  .card-front .info h3 {
+.tech  .card-front .info h3 {
     font-size: 1.1em;
   }
 
-  .card-front .info p {
+.tech  .card-front .info p {
     font-size: 0.8em;
   }
 
-  .card-front .info button {
+.tech  .card-front .info button {
     bottom: 60px;
     right: 5px;
     font-size: 12px;
@@ -993,47 +993,47 @@
     height: 20px;
   }
 
-  .card-back p {
+.tech  .card-back p {
     top: 90px;
     font-size: 0.75em;
     padding: 10px;
   }
 
-  .card-back button {
+.tech  .card-back button {
     bottom: 90px;
     font-size: 0.75em;
     padding: 6px;
   }
 
-  .footer-heading {
+.tech  .footer-heading {
     font-size: 28px;
   }
 
-  .top-footer p {
+.tech  .top-footer p {
     font-size: 0.9em;
   }
 
-  .lower-footer p {
+.tech  .lower-footer p {
     font-size: 0.8em;
   }
 
-  .social-icons a {
+.tech  .social-icons a {
     font-size: 1.2em;
     margin: 0 5px;
   }
 
-  .presented-logo {
+.tech  .presented-logo {
     max-width: 60px;
   }
 
-  .musiccontainer {
+.tech  .musiccontainer {
     width: 40px;
     height: 40px;
     right: 10px;
     bottom: 10px;
   }
 
-  .music-btn i {
+.tech  .music-btn i {
     font-size: 18px;
   }
 }
@@ -1041,23 +1041,23 @@
 /*Responsiveness of Fun Events*/
 
 @media screen and (max-width: 1200px) {
-  .cardcontainer {
+.fun  .cardcontainer {
     max-width: 90%;
     column-gap: 60px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, auto); 
   }
 
-  .card-inner {
+.fun .card-inner {
     min-height: 500px;
   }
 
-  .card-back p {
+.fun  .card-back p {
     top: 150px;
     font-size: 0.9em;
   }
 
-  .card-back button {
+.fun  .card-back button {
     bottom: 150px;
     right: 100px;
     font-size: 0.9em;
@@ -1066,23 +1066,23 @@
 
 /* For screens up to 992px (larger tablets) */
 @media screen and (max-width: 992px) {
-  .cardcontainer {
+.fun  .cardcontainer {
     grid-template-columns: 1fr; /* Single column */
     column-gap: 0;
     max-width: 600px;
     gap: 80px;
   }
 
-  .card-inner {
+.fun  .card-inner {
     min-height: 450px;
   }
 
-  .card-back p {
+.fun  .card-back p {
     top: 130px;
     font-size: 0.85em;
   }
 
-  .card-back button {
+.fun  .card-back button {
     bottom: 130px;
     right: 50%;
     transform: translateX(50%);
@@ -1091,23 +1091,23 @@
 
 /* For screens up to 768px (typical tablets) */
 @media screen and (max-width: 768px) {
-  #heading h1 {
+.fun  #heading h1 {
     font-size: 28px;
   }
 
-  .card-inner {
+.fun  .card-inner {
     min-height: 400px;
   }
 
-  .card-front .info h3 {
+.fun  .card-front .info h3 {
     font-size: 1.2em;
   }
 
-  .card-front .info p {
+.fun  .card-front .info p {
     font-size: 0.9em;
   }
 
-  .card-front .info button {
+.fun  .card-front .info button {
     bottom: 80px;
     right: 10px;
     font-size: 14px;
@@ -1115,13 +1115,13 @@
     height: 25px;
   }
 
-  .card-back p {
+.fun  .card-back p {
     top: 110px;
     font-size: 0.8em;
     padding: 15px;
   }
 
-  .card-back button {
+.fun  .card-back button {
     bottom: 110px;
     font-size: 0.8em;
     padding: 8px;
@@ -1130,77 +1130,77 @@
     transform: translateX(50%);
   }
 
-  .footer-heading {
+.fun  .footer-heading {
     font-size: 32px;
     margin-left: 0;
     text-align: center;
   }
 
-  .top-footer {
+.fun  .top-footer {
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
 
-  .top-footer p {
+.fun  .top-footer p {
     margin-left: 0;
     text-align: center;
   }
 
-  .lower-footer {
+.fun  .lower-footer {
     flex-direction: column;
     align-items: center;
     gap: 10px;
     text-align: center;
   }
 
-  .presented-by {
+.fun  .presented-by {
     margin-left: 0;
     margin-top: 15px;
     flex-direction: column;
     align-items: center;
   }
 
-  .musiccontainer {
+.fun  .musiccontainer {
     right: 15px;
     bottom: 15px;
     width: 50px;
     height: 50px;
   }
 
-  .music-btn i {
+.fun  .music-btn i {
     font-size: 20px;
   }
 }
 
 /* For screens up to 480px (phones) */
 @media screen and (max-width: 480px) {
-  #heading h1 {
+.fun  #heading h1 {
     font-size: 24px;
   }
 
-  .cardcontainer {
+.fun  .cardcontainer {
     grid-template-columns: 1fr; /* Single column */
     gap: 60px;
   }
 
-  .card-inner {
+.fun  .card-inner {
     min-height: 350px;
   }
 
-  .card-front img {
+.fun  .card-front img {
     height: 300px;
   }
 
-  .card-front .info h3 {
+.fun  .card-front .info h3 {
     font-size: 1.1em;
   }
 
-  .card-front .info p {
+.fun  .card-front .info p {
     font-size: 0.8em;
   }
 
-  .card-front .info button {
+.fun  .card-front .info button {
     bottom: 60px;
     right: 5px;
     font-size: 12px;
@@ -1208,48 +1208,48 @@
     height: 20px;
   }
 
-  .card-back p {
+.fun  .card-back p {
     top: 90px;
     font-size: 0.75em;
     padding: 10px;
   }
 
-  .card-back button {
+.fun  .card-back button {
     bottom: 90px;
     font-size: 0.75em;
     padding: 6px;
     width: auto;
   }
 
-  .footer-heading {
+.fun  .footer-heading {
     font-size: 28px;
   }
 
-  .top-footer p {
+.fun  .top-footer p {
     font-size: 0.9em;
   }
 
-  .lower-footer p {
+.fun  .lower-footer p {
     font-size: 0.8em;
   }
 
-  .social-icons a {
+.fun  .social-icons a {
     font-size: 1.2em;
     margin: 0 5px;
   }
 
-  .presented-logo {
+.fun  .presented-logo {
     max-width: 60px;
   }
 
-  .musiccontainer {
+.fun  .musiccontainer {
     width: 40px;
     height: 40px;
     right: 10px;
     bottom: 10px;
   }
 
-  .music-btn i {
+.fun  .music-btn i {
     font-size: 18px;
   }
 }
