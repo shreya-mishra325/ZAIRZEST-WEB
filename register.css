@@ -3,7 +3,7 @@
 body{
     margin: 0;
     padding: 0;
-    
+    font-family: 'Outfit', sans-serif;
 }
 .container{
     display: flex;
@@ -22,12 +22,12 @@ body{
 .left-text{
     text-align: left;
     margin-top: 230px;
-    margin-left: 190px;
+    margin-left: 200px;
     font-size: larger;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 .left h1 {
-    font-weight: 780;
+    font-weight: 650;
     font-size: 53px;
     line-height: 0.6;
  }
@@ -72,7 +72,7 @@ p {
     cursor: pointer;
 }
 .right h1 {
-    color: #00bfff;
+    color: #39cdff;
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 10px;

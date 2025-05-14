@@ -7,7 +7,7 @@
     }
 
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Outfit', sans-serif;
       display: flex;
       min-height: 100vh;
     }
@@ -27,7 +27,7 @@
     .left-side h1 {
       font-size: 3.6rem;
       line-height: 1.2;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 20px;
       margin-left: 120px;
     }
@@ -55,9 +55,9 @@
     }
 
     .right-side h2 {
-      color: #00bfff;
+      color: #41d0ff;
       font-size: 1.8rem;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 10px;
     }
 

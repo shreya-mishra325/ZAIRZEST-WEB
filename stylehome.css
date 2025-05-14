@@ -20,6 +20,7 @@
 body{
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Outfit', sans-serif;
 }
 * {
     scrollbar-width: thin;
@@ -85,17 +86,17 @@ div {
 }
 
 .first {
-    font-family: 'Outfit-Bold',sans-serif;
+    font-family: 'Outfit', sans-serif;
     margin-top: 230px;
     line-height: 0.2;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 .second {
-    font-family: 'Outfit-Bold',sans-serif;
+    font-family: 'Outfit', sans-serif;
     margin-top: 50px;
     line-height: 0;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 .first-part .left-part {
@@ -245,7 +246,7 @@ div {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
-    font-family: 'Outfit-Bold',sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 20px;
     position: relative;
     box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.4);
@@ -337,7 +338,7 @@ h3 {
 body {
       margin: 0%;
       height: 1200px;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Outfit', sans-serif;
       background-color: #222121;
       color: white;
     }
