@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background-image:url('WhatsApp Image 2025-05-13 at 21.12.34 (1).jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.container {
+  display:flex;
+  gap: 30px;
+  text-align: center;
+}
+
+.box {
+  background-color: rgba(0, 0, 0, 0.9); 
+  width: 300px;
+  height: 350px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+  text-align:center;
+}
+
+.box img {
+  max-width: 80%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.caption{
+    color:white;
+    margin-block: 8px; 
+    font-size: 1rem;
+}
