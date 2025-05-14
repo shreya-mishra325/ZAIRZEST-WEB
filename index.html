@@ -139,7 +139,24 @@
         alert("Page 3 not found!");
       }
     }
-    // <!--tranisition effect of hero to be added-->
+    // <!--loading button functionality-->
+    document.addEventListener('DOMContentLoaded', () => {
+        const navLinks = document.querySelectorAll('.nav-buttons');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default navigation
+
+                const targetURL = this.getAttribute('href');
+
+                // Store the target URL in localStorage
+                localStorage.setItem('targetURL', targetURL);
+
+                // Redirect to your loading page HTML file
+                window.location.href = '/load.html'; // Adjust the path if your loading page is in a different directory
+            });
+        });
+    });
         
 </script>
 </body>
