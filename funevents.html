@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="funevents.css">
   <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel = "stylesheet" href="styleicons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
   <link rel="stylesheet" href="media-queries.css">
 </head>
 <body class="fun">
@@ -27,7 +29,7 @@
 <div id="heading"><h1>Fun Events</h1></div>
   <div class="cardcontainer">
 
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <div class="card-inner">
           <div class="card-front">
             <img src="treasurehunt.jpg" alt="treasurehunt">
@@ -47,7 +49,7 @@
         </div>
       </div>
 
-       <div class="card">
+       <div class="card" data-aos="zoom-in">
         <div class="card-inner">
           <div class="card-front">
             <img src="jammingnight.jpg" alt="jammingnight">
@@ -66,7 +68,7 @@
         </div>
       </div>
 
-       <div class="card">
+       <div class="card" data-aos="zoom-in">
         <div class="card-inner">
           <div class="card-front">
             <img src="paperdance.jpg" alt="paperdance">
@@ -87,7 +89,7 @@
         </div>
       </div>
 
-       <div class="card">
+       <div class="card" data-aos="zoom-in">
         <div class="card-inner">
           <div class="card-front">
             <img src="twister.jpg" alt="twister">
@@ -106,7 +108,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <div class="card-inner">
           <div class="card-front">
             <img src="pvpgaming.jpg" alt="pvpgaming">
@@ -127,7 +129,7 @@
       </div>
 
 
-        <div class="card">
+        <div class="card" data-aos="zoom-in">
         <div class="card-inner">
           <div class="card-front">
             <img src="praogramemer.jpg" alt="programemer">
@@ -213,7 +215,8 @@
             musicbtn.innerHTML='<i class="fa-solid fa-play"></i>'
         }
     })
-
+  
+  AOS.init(); 
   </script>
 
 </body>

@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="techevents.css">
   <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel = "stylesheet" href="styleicons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
   <link rel="stylesheet" href="media-queries.css">
 <body class="tech">
   
@@ -28,7 +30,7 @@
   <div class="cardcontainer">
     <!-- Left Column -->
    <!---- <div id="leftcol"class="column">-->
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <div class="card-inner">
           <div class="card-front">
             <img src="digtheweb.jpg" alt="digtheweb">
@@ -47,7 +49,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <div class="card-inner">
           <div class="card-front">
             <img src="robosumo.jpg" alt="robosumo">
@@ -66,7 +68,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <div class="card-inner">
           <div class="card-front">
             <img src="designathon.jpg" alt="designathon">
@@ -89,7 +91,7 @@
 
     <!-- Right Column -->
     <!--<div id="rightcol" class="column">-->
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <div class="card-inner">
           <div class="card-front">
             <img src="cprush.jpg" alt="cprush">
@@ -109,7 +111,7 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" data-aos="zoom-in">
         <div class="card-inner">
           <div class="card-front">
             <img src="ideathon.jpg" alt="ideathon">
@@ -197,7 +199,8 @@
             musicbtn.innerHTML='<i class="fa-solid fa-play"></i>'
         }
     })
-
+  
+  AOS.init(); 
   </script>
 
 </body>

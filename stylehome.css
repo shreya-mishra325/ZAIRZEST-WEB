@@ -471,150 +471,62 @@ body {
 
   /* Navbar */
   .top-navigation {
-    flex-direction: column;
-    padding: 10px;
-    height: auto;
-    text-align: center;
+    display: hidden;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+    background-color: #000;
+    overflow: hidden; 
   }
-
+  
   .logo img {
-    width: 120px;
-    margin-bottom: 10px;
+    max-width: 150px;
+    height: auto;
   }
-
+  
   .top-buttons {
-    flex-direction: column;
-    gap: 10px;
-    margin: 0;
-    font-size: 0.9em;
-    align-items: center;
-  }
-
-  /* First Section (Banner) */
-  .first-part {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px 10px;
-    height: auto;
-    width: 100%;
-    background-position: center;
-    overflow-x: hidden;
-  }
-
-  .left-part {
-    margin: 0 auto;
-    align-items: center;
-    text-align: center;
-    font-size: 1em;
-  }
-
-  .first,
-  .second {
-    font-size: 1.1em;
-    margin-top: 20px;
-    line-height: 1.4;
-  }
-
-  .button-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    margin-top: 20px;
-  }
-
-  .explore,
-  .register {
-    width: 90%;
-    font-size: 1em;
-    padding: 10px 20px;
-  }
-
-  /* Hero Section */
-  .hero {
-    flex-direction: column;
-    padding: 20px 10px;
+    display: flex;
     gap: 20px;
-    text-align: center;
+  }
+  
+  .nav-buttons {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-buttons:hover {
+    color: aqua;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
   }
 
-  .heroimg {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .herotext {
-    padding: 0 10px;
-  }
-
-  .heading {
-    font-size: 1.4em;
-  }
-
-  /* Events Section */
-  .third-part {
-    padding: 20px;
-    height: auto;
-  }
-
-  .events-section h2 {
-    font-size: 1.4em;
-    margin-top: 30px;
-    text-align: center;
-  }
-
-  .events-grid {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    margin: 0;
-  }
-
-  .event-card {
-    width: 90%;
-    height: auto;
-    background-size: cover;
-  }
-
-  .event-details {
-    padding: 15px;
-    text-align: center;
-  }
-
-  .event-details h3 {
-    font-size: 1.3em;
-  }
-
-  /* Footer */
-  .footer {
-    flex-direction: column;
-    text-align: center;
-    height: auto;
-    padding: 25px 15px;
-  }
-
-  .footer-heading {
-    font-size: 1.5em;
-    margin-left: 0;
-  }
-
-  .top-footer,
-  .lower-footer,
-  .presented-by {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-left: 0;
-  }
-
-  .container {
-    right: 10px;
-    bottom: 10px;
-    width: 45px;
-    height: 45px;
-  }
-
-  .music-btn i {
-    font-size: 18px;
+ 
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .top-buttons {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+      margin-top: 10px;
+    }
+  
+    .top-buttons.active {
+      display: flex;
+    }
+  
+    .nav-buttons p {
+      margin: 10px 0;
+    }
   }
 }
