@@ -1,7 +1,407 @@
 /* media-queries.css */
 
+/* Base Styles: Mobile First (0–479px) */
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  background-color: #222;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.index .top-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: auto;
+  background-color: black;
+  position: static;
+  text-align: center;
+}
+
+.index .logo img {
+  width: 150px;
+}
+
+/* Top Buttons */
+.index .top-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 1em;
+}
+
+/* Hero Section */
+.index .first-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('forest.png');
+  background-size: cover;
+  background-position: center;
+  padding: 30px 15px;
+  text-align: center;
+  height: auto;
+}
+
+.index .left-part {
+  text-align: center;
+}
+
+.index .first,
+.index .second {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+/* Buttons */
+.index .button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.index .explore,
+.index .register {
+  font-size: 1em;
+  padding: 10px 20px;
+  width: 90%;
+}
+
+/* Hero Section 2 */
+.index .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  gap: 20px;
+}
+
+.index .heroimg {
+  max-width: 90%;
+  height: auto;
+}
+
+.index .herotext {
+  padding: 0 10px;
+}
+
+.index .heading {
+  font-size: 1.4em;
+}
+
+/* Events Section */
+.index .third-part {
+  padding: 20px;
+  height: auto;
+  background-color: black;
+}
+
+.index .events-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.index .event-card {
+  width: 90%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Footer */
+.index .footer {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.index .footer-heading {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.index .top-footer,
+.index .lower-footer,
+.index .presented-by {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+@media screen and (min-width: 480px) {
+  .index .top-navigation {
+    flex-direction: column;
+    padding: 8px;
+    height: auto;
+  }
+
+  .index .logo {
+    margin-bottom: 10px;
+    max-width: 150px;
+  }
+
+  .index .top-buttons {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9em;
+  }
+
+  .index .left-part {
+    margin: 30px 10px 10px;
+    font-size: 1em;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .index .first,
+  .index .second {
+    font-size: 1em;
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+
+  .index .button-container {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .index .explore,
+  .index .register {
+    width: 90%;
+    padding: 10px;
+    font-size: 0.95em;
+  }
+
+  .index .hero {
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .index .heroimg {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .index .herotext {
+    padding: 0 10px;
+  }
+
+  .index .heading {
+    font-size: 1.3em;
+  }
+
+  .index .events-section h2 {
+    font-size: 1.3em;
+    margin-top: 30px;
+  }
+
+  .index .events-grid {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .index .event-card {
+    width: 95%;
+    height: auto;
+  }
+
+  .index .event-details {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .index .event-details h3 {
+    font-size: 1.2em;
+  }
+
+  .index .footer {
+    flex-direction: column;
+    padding: 20px 10px;
+    height: auto;
+    text-align: center;
+  }
+
+  .index .footer-heading {
+    font-size: 1.4em;
+    margin-left: 0;
+  }
+
+  .index .top-footer,
+  .index .lower-footer,
+  .index .presented-by {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .index .container {
+    width: 45px;
+    height: 45px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .index .music-btn i {
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .index .top-navigation {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .index .logo {
+    margin: 0 auto 10px;
+  }
+
+  .index .top-buttons {
+    flex-direction: column;
+    margin: 0;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .index .left-part {
+    margin: 50px 10px 20px;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .index .first,
+  .index .second {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+
+  .index .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .index .explore,
+  .index .register {
+    width: 80%;
+    font-size: 1em;
+  }
+
+  .index .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .index .heroimg {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .index .herotext {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .index .heading {
+    font-size: 1.5em;
+  }
+
+  .index .events-section h2 {
+    font-size: 1.4em;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .index .events-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+
+  .index .event-card {
+    width: 90%;
+    height: auto;
+    background-size: cover !important;
+  }
+
+  .index .event-details {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .index .event-details h3 {
+    font-size: 1.3em;
+  }
+
+  .index .footer {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .index .footer-heading {
+    margin-left: 0;
+    font-size: 1.6em;
+  }
+
+  .index .top-footer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .index .lower-footer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .index .presented-by {
+    margin-left: 0;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .index .container {
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .index .music-btn i {
+    font-size: 20px;
+  }
+}
+
 /* Styles for screens up to 1200px (typical smaller desktops/large tablets) */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .index .top-buttons {
         margin-left: auto; /* Push buttons to the right */
         margin-right: 20px; /* Add some right margin */
@@ -86,181 +486,170 @@
     }
 }
 
-/* For screens up to 768px (typical tablets) */
-@media screen and (max-width: 768px) {
-   .index .top-navigation {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 15px;
-        text-align: center;
-    }
+/* For screens up to 768px (typical tablets) 
+@media screen and (max-width: 768px) { 
+  .index .top-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+    margin: 10px 0;
+  }
 
-    .index .logo {
-        margin-left: 0;
-        margin-bottom: 15px;
-        font-size: 1.8em;
-    }
+  .index .logo {
+    margin: 0 0 15px 0;
+    font-size: 1.8em;
+    text-align: center;
+  }
 
-    .index .top-buttons {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 20px;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+  .index .top-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 0 0;
+    gap: 20px;
+  }
 
-    .index .nav-buttons {
-        font-size: medium;
-    }
+  .index .nav-buttons {
+    font-size: 1em;
+  }
 
-    .index .first-part {
-        height: auto;
-        padding-bottom: 50px;
-    }
+  .index .first-part {
+    height: auto;
+    padding: 30px 20px 50px 20px;
+  }
 
-    .index .first-part .left-part {
-        margin-left: 70px;
-        margin-right: 20px;
-        text-align: center;
-        align-items: center;
-        font-size: 1.3em;
-    }
+  .index .first-part .left-part {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    font-size: 1.3em;
+    max-width: 90%;
+  }
 
-    .index .first {
-        font-size: 1.1em;
-        margin-top: 150px;
-        line-height: 1;
-    }
+  .index .first,
+  .index .second {
+    font-size: 1.1em;
+    margin-top: 20px;
+    line-height: 1.4;
+  }
 
-    .index .second {
-        font-size: 1.1em;
-        margin-top: 20px;
-        line-height: 1;
-    }
+  .index .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 1em;
+    margin-top: 30px;
+  }
 
-    .index .button-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        font-size: 18px;
-        margin-top: 40px;
-    }
+  .index .first-part .explore,
+  .index .first-part .left-part .register {
+    width: 90%;
+    font-size: 0.95em;
+    padding: 10px 20px;
+  }
 
-    .index .first-part .explore,
-    .index .first-part .left-part .register {
-        width: 90%;
-        font-size: 0.9em;
-        padding: 10px 20px;
-        margin-top: 20px;
-    }
+  .index .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 30px;
+    height: auto;
+  }
 
-    .index .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 30px 20px;
-        gap: 30px;
-        height: auto;
-    }
+  .index .heroimg {
+    max-width: 100%;
+    height: auto;
+  }
 
-    .index .heroimg {
-        max-width: 80%;
-    }
+  .index .herotext {
+    margin-left: 0;
+    padding: 0 10px;
+  }
 
-    .index .herotext {
-        margin-left: 0;
-    }
+  .index .heading {
+    font-size: 1.8em;
+    text-align: center;
+  }
 
-    .index .heading {
-        font-size: 30px;
-    }
+  .index .third-part {
+    padding: 30px 20px;
+    height: auto;
+  }
 
-    .index .third-part {
-        padding: 30px 20px;
-        height: auto;
-    }
+  .index .events-section h2 {
+    margin-top: 50px;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    text-align: center;
+  }
 
-    .index .events-section h2 {
-        margin-top: 80px;
-        font-size: 1.7em;
-        margin-bottom: 15px;
-    }
+  .index .events-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+  }
 
-    .index .events-grid {
-        flex-direction: column;
-        align-items: center;
-        margin-left: 0;
-        gap: 30px;
-    }
+  .index .event-card {
+    width: 90%;
+    height: auto;
+  }
 
-    .index .event-card {
-        width: 90%;
-        height: auto;
-        margin-right: 0;
-    }
+  .index h3 {
+    font-size: 1.8em;
+    margin-top: 20px;
+  }
 
-    .index h3 {
-        font-size: 36px;
-        margin-top: 20px;
-    }
+  .index .event-details {
+    position: static;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+  }
 
-    .index .event-details {
-        position: static;
-        text-align: center;
-        padding: 20px;
-        margin: 0;
-    }
+  .index .footer {
+    padding: 30px 20px;
+    text-align: center;
+  }
 
-    .index .event-details h3 {
-        text-align: center;
-    }
+  .index .footer-heading {
+    font-size: 1.6em;
+    margin-left: 0;
+  }
 
-    .index .footer {
-        padding: 30px 20px;
-    }
+  .index .top-footer p,
+  .index .lower-footer {
+    text-align: center;
+    margin: 0 auto;
+  }
 
-    .index .footer-heading {
-        font-size: 32px;
-        margin-left: 0;
-        text-align: center;
-    }
+  .index .presented-by {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .index.top-footer {
-        align-items: center;
-    }
+  .index .container {
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+  }
 
-    .index .top-footer p {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .index .lower-footer {
-        align-items: center;
-        text-align: center;
-    }
-
-    .index .presented-by {
-        margin-left: 0;
-        margin-top: 20px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .index .container {
-        right: 15px;
-        bottom: 15px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .index .music-btn i {
-        font-size: 20px;
-    }
+  .index .music-btn i {
+    font-size: 20px;
+  }
 }
 
-/* For screens up to 480px (typical phones) */
+
+/* For screens up to 480px (typical phones) 
 @media screen and (max-width: 480px) {
     .logo {
         font-size: 1.5em;
@@ -296,7 +685,7 @@
     .hero {
         padding: 20px 15px;
     }
-}
+}*/
 
 /*About Us page Responsiveness*/
 
