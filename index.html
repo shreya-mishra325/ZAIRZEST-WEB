@@ -10,6 +10,8 @@
     <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel = "stylesheet" href="styleicons.css">
     <link rel = "stylesheet" href="stylehome.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <link rel="stylesheet" href="media-queries.css">
 </head>
 <body class="index">
@@ -37,7 +39,7 @@
     <!--Second Page-->
      <main>
         <section class="hero">
-            <img src="cyberpanda.png" alt="cyberpanda" class="heroimg">
+            <img src="cyberpanda.png" alt="cyberpanda" class="heroimg" data-aos="zoom-in">
             <div class="herotext">
                 <h1><div class="heading"><span class="zenheading" style="color: #00d5ffe0;">Zen 4.0 :</span> Your Guide in The Cyber Wild!</div></h1>
                 <p>
@@ -65,13 +67,13 @@
     </P>
      </div>
     <div class = "events-grid">
-        <a href="techevents.html" class="event-card" style="background-image: url('tech-events.jpg'); background-size: cover;";> 
-            <div class ="event-details" data-aos="flip-left">
+        <a href="techevents.html" class="event-card" data-aos="flip-left" style="background-image: url('tech-events.jpg'); background-size: cover;";> 
+            <div class ="event-details">
     <h3>Tech Events</h3>
             <p class ="click-to-view">Click to view</p>
         </div>
         </a>
-        <a href="funevents.html" class="event-card" style="background-image: url('fun-events.jpg'); background-size: cover;";>
+        <a href="funevents.html" class="event-card" data-aos="flip-right" style="background-image: url('fun-events.jpg'); background-size: cover;";>
         <div class ="event-details">
     <h3>Fun Events</h3>
             <p class="click-to-view">Click to view</p>
@@ -140,7 +142,7 @@
       }
     }
     // <!--loading button functionality-->
-        
+     AOS.init();     
 </script>
 </body>
 </html>
