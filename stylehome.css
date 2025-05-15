@@ -463,6 +463,12 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+  /* Prevent horizontal scrolling */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   /* Navbar */
   .top-navigation {
     flex-direction: column;
@@ -481,20 +487,25 @@ body {
     gap: 10px;
     margin: 0;
     font-size: 0.9em;
+    align-items: center;
   }
 
-  /* Hero Section (first-part) */
+  /* First Section (Banner) */
   .first-part {
     flex-direction: column;
-    height: auto;
-    padding: 30px 10px;
-    background-position: center;
+    align-items: center;
     text-align: center;
+    padding: 30px 10px;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    overflow-x: hidden;
   }
 
   .left-part {
     margin: 0 auto;
     align-items: center;
+    text-align: center;
     font-size: 1em;
   }
 
@@ -519,16 +530,16 @@ body {
     padding: 10px 20px;
   }
 
-  /* Cyber Panda Hero Section */
+  /* Hero Section */
   .hero {
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 10px;
     gap: 20px;
     text-align: center;
   }
 
   .heroimg {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
   }
 
@@ -537,7 +548,7 @@ body {
   }
 
   .heading {
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 
   /* Events Section */
