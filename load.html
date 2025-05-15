@@ -66,14 +66,9 @@
             }
         },intervalTime);
         function loadNextContent(){
-    const targetURL = localStorage.getItem('targetURL');
-    if (targetURL) {
-        window.location.href = targetURL;
-        localStorage.removeItem('targetURL'); 
-    } else {
-        window.location.href = "index.html"; 
-    }
-}
+            window.location.href="index.html"
+        }
+
     </script>
 </body>
 </html>
