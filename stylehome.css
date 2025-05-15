@@ -157,10 +157,10 @@ div {
     display:inline-block;
     font-weight: 700;
     padding: 8px 16px; 
-    border: 2px solid #08bffc; 
+    border: 2px solid #38ccff; 
     border-radius: 8px; 
     background-color: transparent; 
-    color: #01c0eb; 
+    color: #38ccff; 
     font-size: 0.65em; 
     cursor: pointer; 
     margin-right: 2px;
@@ -183,7 +183,7 @@ div {
     height: 56px;
     border-radius: 8px; 
     font-weight: 500;
-    background-color: #03e8f8; 
+    background-color: #38ccff; 
     color: #000000; 
     font-size: 0.65em; 
     cursor: pointer; 
@@ -213,7 +213,6 @@ div {
     background-color: black;
     color: #fff;
     height: 100vh;
-    filter: drop-shadow(200px 0px 50000px black);
 }
 .heroimg{
   height: auto;
@@ -237,6 +236,7 @@ div {
 
 /*3rd Part CSS*/
 .third-part {
+    font-family: 'Outfit', sans-serif;
     background-color: black;
     color: white;
     margin: 0%;
@@ -246,7 +246,6 @@ div {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
-    font-family: 'Outfit', sans-serif;
     font-size: 20px;
     position: relative;
     box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.4);
@@ -260,13 +259,15 @@ div {
 }
 
 .events-section h2 {
+  font-weight: 520;
   margin-top: 130px;
-  font-size: 1.9em; 
+  font-size: 2em; 
   margin-bottom: 10px;
-  color: #0fdaf0;
+  color: #38ccff;
 }
 
 .events-description {
+  font-family: 'Outfit', sans-serif;
   color: #ffffff; 
   margin-bottom: 5px;
   margin-top: 10px;
@@ -279,6 +280,7 @@ div {
   gap: 20px; 
   justify-content: center;
   margin-left: 45px;
+  text-decoration: none;
 }
 
 .event-card {
@@ -296,6 +298,11 @@ div {
   width: 510px; 
 }
 
+.event-card:not(:hover) {
+    scale: 1;
+    transition: all .5s;
+}
+
 h3 {
   font-size: 60px;
   margin-top: 170px;
@@ -304,6 +311,7 @@ h3 {
 }
 
 .event-details {
+  font-family: 'Outfit', sans-serif;
   padding: 10px;
   left: 20px;
   right: 20px;
@@ -321,6 +329,7 @@ h3 {
 }
 
 .click-to-view {
+  margin-top: -7px;
   color: #f4efef;
   font-size: 0.8em;
   letter-spacing: 1;
