@@ -23,45 +23,17 @@
 
     <form>
       <div class="form-group">
-        <input type="email" placeholder="Email here" required>
+        <input type="email" placeholder="Email here" >
       </div>
       <div class="form-group">
-        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Password" >
       </div>
       <div class="form-links" style="color: rgba(57, 55, 55, 0.689);">
         Don't remember Password? <a href="profile2.html">Reset Password</a><br>
         Not a Member yet? <a href="registerpage.html">Sign Up</a>
       </div>
-      <div class="buttondiv"><button onclick="goToProfilePage()" type="submit">Sign In</button></div>
+      <div class="buttondiv"><button><a href="profile2.html" style="text-decoration: none; color: black;">Sign In</a></button></div>
     </form>
   </div>
-
-  <script>
-   document.addEventListener('DOMContentLoaded', () => {
-            const signInForm = document.getElementById('signInForm');
-            const emailInput = document.getElementById('email');
-            const passwordInput = document.getElementById('password');
-
-            signInForm.addEventListener('submit', (event) => {
-                event.preventDefault();
-
-                if (!emailInput.value.trim()) {
-                    alert('Please enter your email.');
-                    return;
-                }
-                if (!passwordInput.value.trim()) {
-                    alert('Please enter your password.');
-                    return;
-                }
-
-                console.log('Login successful');
-                alert('Login successful!'); 
-
-                window.location.href = 'index.html'; 
-            });
-        });
-
-        
-  </script>
 </body>
 </html>

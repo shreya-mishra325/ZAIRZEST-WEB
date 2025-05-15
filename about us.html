@@ -10,21 +10,23 @@
     <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel = "stylesheet" href="styleicons.css">
     <link rel = "stylesheet" href="about-us.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <link rel="stylesheet" href="media-queries.css">
 </head>
 <body class="about">
 <section>
     <!--First Page-->
     <div class="top-navigation">
-    <div class="logo"><a href="load.html"><img src="Zairzest4.0.png"></a></div>
+    <div class="logo"><a href="index.html"><img src="Zairzest4.0.png"></a></div>
     <ul class ="top-buttons">
     <ul><a href="about us.html" class ="nav-buttons">About Us</a></ul>
     <ul><a href="registerpage.html" class ="nav-buttons">Register</a></ul>
     <ul><a href="sign in.html" class ="nav-buttons">Sign In</a></button></ul>
   </ul> 
   </div>
-<div class="text-part">
-<h1>Zairza: Igniting Innovation</h1>
+<div class="text-part" data-aos="fade-up-right" data-aos="slide-up">
+<h1 data-aos="fade-up-left">Zairza: Igniting Innovation</h1>
 <div class="para"><p>Zairza, more than just a club, is a vibrant community of tech enthusiasts at Odisha University of Technology and Research. Rooted in our motto, "Wonder, Think, Create," we've been pushing the boundaries of innovation in Robotics, Software, and Design since 2005. Officially recognized as a central club in 2007, Zairza has consistently achieved excellence, earning numerous accolades.</p>
 </div>
 <div class="para"><p>Our mission is to empower students with the skills and knowledge needed to excel in their careers. Regular workshops and sessions provide a strong foundation, while industry internships offer invaluable real-world experience. Strategically located in the SAC area, we're easily accessible to all students.</p>
@@ -34,7 +36,7 @@
 <div class="para"><p>Join Zairza and be part of a legacy of innovation. Together, we'll shape the future of technology.</p></div>
 </div>
 <div class="photo-grid">
-<div class="image"><img src ="zairza-grouppic.jpg"></div>
+<div class="image" data-aos="zoom-in"><img src ="zairza-grouppic.jpg"></div>
 </div>
 </div>
 </section>
@@ -88,7 +90,9 @@
             musicbtn.innerHTML='<i class="fa-solid fa-play"></i>'
         }
     })
-
+ AOS.init({
+    once: true,
+ });
 </script>
 </body>
 </html>

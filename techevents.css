@@ -130,22 +130,24 @@
     }
 
     .card-back p {
+      padding: 35px;
       flex: 1;
       position: absolute;
-      top:175px
+      top:120px
     }
 
     .card-back button {
+      width: 80px;
       position: absolute;
       bottom: 170px;
-      right: 150px;
+      right: 156px;
       background-color: #00bfff;
       border: none;
       color: #fff;
-      padding: 10px;
+      padding: 11px;
       border-radius: 5px;
       cursor: pointer;
-      align-self: flex-end;
+      align-self: center;
     }
 
     @media (max-width: 768px) {
