@@ -471,7 +471,7 @@ body {
 
   /* Navbar */
   .top-navigation {
-    display: hidden;
+    display: hide;
     align-items: center;
     justify-content: space-between;
     padding: 10px 30px;
