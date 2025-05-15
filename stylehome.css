@@ -463,38 +463,147 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 1.5em;
-    }
+  /* Navbar */
+  .top-navigation {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+  }
 
-    .top-buttons {
-        gap: 15px;
-    }
+  .logo img {
+    width: 120px;
+    margin-bottom: 10px;
+  }
 
-    .nav-buttons {
-        font-size: small;
-        padding: 8px 12px;
-    }
+  .top-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    font-size: 0.9em;
+  }
 
-    .first-part .left-part {
-        font-size: 1.1em;
-    }
+  /* Hero Section (first-part) */
+  .first-part {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 10px;
+    background-position: center;
+    text-align: center;
+  }
 
-    .first {
-        font-size: 1em;
-        margin-top: 120px;
-    }
+  .left-part {
+    margin: 0 auto;
+    align-items: center;
+    font-size: 1em;
+  }
 
-    .second {
-        font-size: 1em;
-        margin-top: 15px;
-    }
+  .first,
+  .second {
+    font-size: 1.1em;
+    margin-top: 20px;
+    line-height: 1.4;
+  }
 
-    .button-container {
-        font-size: 16px;
-    }
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
 
-    .hero {
-        padding: 20px 15px;
-    }
+  .explore,
+  .register {
+    width: 90%;
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  /* Cyber Panda Hero Section */
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .heroimg {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .herotext {
+    padding: 0 10px;
+  }
+
+  .heading {
+    font-size: 1.3em;
+  }
+
+  /* Events Section */
+  .third-part {
+    padding: 20px;
+    height: auto;
+  }
+
+  .events-section h2 {
+    font-size: 1.4em;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .events-grid {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+  }
+
+  .event-card {
+    width: 90%;
+    height: auto;
+    background-size: cover;
+  }
+
+  .event-details {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .event-details h3 {
+    font-size: 1.3em;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 25px 15px;
+  }
+
+  .footer-heading {
+    font-size: 1.5em;
+    margin-left: 0;
+  }
+
+  .top-footer,
+  .lower-footer,
+  .presented-by {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .container {
+    right: 10px;
+    bottom: 10px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .music-btn i {
+    font-size: 18px;
+  }
 }
