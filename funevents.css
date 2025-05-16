@@ -117,7 +117,13 @@ body {
     .card-front{
         background-color: #2a2a2a;
     }
-
+    .button-div {
+      position:absolute;
+      bottom: 150px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
     .card-back {
       background-color: #2a2a2a;
       transform: rotateY(180deg);
@@ -130,15 +136,13 @@ body {
     }
 
     .card-back p {
+      padding: 20px;
       flex: 1;
       position: absolute;
-      top:175px
+      top:165px;
     }
 
     .card-back button {
-      position: absolute;
-      bottom: 170px;
-      right: 139px;
       width: 100px;
       background-color: #00bfff;
       border: none;
