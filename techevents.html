@@ -36,7 +36,7 @@
             <img src="digtheweb.jpg" alt="digtheweb">
             <div class="info">
               <div class="slidetext"><h3>Dig The Web</h3>
-              <p>12 Nov - 2:30–4:00 PM<br><strong>C-207</strong></p>
+              <p data-aos="fade-up">12 Nov - 2:30–4:00 PM<br><strong>C-207</strong></p>
               <button class="flip-btn">i</button></div> 
             </div>
           </div>
@@ -55,7 +55,7 @@
             <img src="robosumo.jpg" alt="robosumo">
             <div class="info">
               <div class="slidetext"><h3>Robo Sumo</h3>
-              <p>12 Nov - 1:00–3:00 PM<br><strong>SAC Area</strong></p>
+              <p data-aos="fade-up">12 Nov - 1:00–3:00 PM<br><strong>SAC Area</strong></p>
               <button class="flip-btn">i</button></div>
             </div>
           </div>
@@ -74,7 +74,7 @@
             <img src="designathon.jpg" alt="designathon">
             <div class="info">
               <div class="slidetext"><h3>Designathon</h3>
-              <p>11 Nov - 2:00–4:00 PM<br><strong>C-202</strong></p>
+              <p data-aos="fade-up">11 Nov - 2:00–4:00 PM<br><strong>C-202</strong></p>
               <button class="flip-btn">i</button></div>
             </div>
           </div>
@@ -96,8 +96,8 @@
           <div class="card-front">
             <img src="cprush.jpg" alt="cprush">
             <div class="info">
-              <div class="slidetext"><h3>CP Rush</h3>
-              <p>11 Nov - 3:00–4:30 PM<br><strong>C-203</strong></p>
+              <div class="slidetext" ><h3>CP Rush</h3>
+              <p data-aos="fade-up">11 Nov - 3:00–4:30 PM<br><strong>C-203</strong></p>
               <button class="flip-btn">i</button></div>
             </div>
           </div>
@@ -117,7 +117,7 @@
             <img src="ideathon.jpg" alt="ideathon">
             <div class="info">
               <div class="slidetext"><h3>Ideathon</h3>
-              <p>13 Nov - 2:00–4:00 PM<br><strong>C-204</strong></p>
+              <p data-aos="fade-up">13 Nov - 2:00–4:00 PM<br><strong>C-204</strong></p>
               <button class="flip-btn">i</button></div>
             </div>
           </div>
@@ -200,7 +200,9 @@
         }
     })
   
-  AOS.init(); 
+  AOS.init({
+    once: true,
+  }); 
   </script>
 
 </body>
