@@ -1,5 +1,64 @@
 /* media-queries.css */
 
+/* Common Mobile Menu Styles for All Pages */
+@media screen and (max-width: 992px) {
+    .menu-toggle {
+        display: block !important;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    
+    .top-buttons,
+    .index .top-buttons,
+    .tech .top-buttons,
+    .fun .top-buttons,
+    .about .top-buttons,
+    .login .top-buttons,
+    .regd .top-buttons {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column !important;
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 20px 0;
+        margin: 0 !important;
+        text-align: center;
+        z-index: 999;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .top-buttons.active,
+    .index .top-buttons.active,
+    .tech .top-buttons.active,
+    .fun .top-buttons.active,
+    .about .top-buttons.active,
+    .login .top-buttons.active,
+    .regd .top-buttons.active {
+        display: flex;
+    }
+    
+    .nav-buttons,
+    .index .nav-buttons,
+    .tech .nav-buttons,
+    .fun .nav-buttons,
+    .about .nav-buttons {
+        margin: 10px 0 !important;
+        padding: 12px 0 !important;
+        width: 100%;
+        font-size: 1.1em !important;
+    }
+    
+    .nav-buttons:hover,
+    .index .nav-buttons:hover,
+    .tech .nav-buttons:hover,
+    .fun .nav-buttons:hover,
+    .about .nav-buttons:hover {
+        background-color: rgba(56, 204, 255, 0.2);
+    }
+}
+
 /* Styles for screens up to 1200px (typical smaller desktops/large tablets) */
 @media screen and (max-width: 1200px) {
     .index .top-buttons {
@@ -58,26 +117,15 @@
 
     .index .footer {
         padding: 40px 20px;
-        flex-direction: column;
-        align-items: flex-start;
+        height: auto;
     }
 
     .index .top-footer {
-        flex-direction: column;
-        gap: 20px;
-        align-items: flex-start;
-    }
-
-    .index .lower-footer {
-        margin-top: 20px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
+        gap: 50px;
     }
 
     .index .presented-by {
-        margin-left: 0;
-        margin-top: 15px;
+        margin-left: 400px;
     }
 
     .index .container {
@@ -86,1160 +134,1587 @@
     }
 }
 
-/* For screens up to 768px (typical tablets) */
-@media screen and (max-width: 768px) {
-  .index .top-navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    padding: 15px;
-    text-align: center;
-    margin: 10px 0;
-  }
-
-  .index .logo {
-    margin: 0 0 15px 0;
-    font-size: 1.8em;
-    text-align: center;
-  }
-
-  .index .top-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0 0 0;
-    gap: 20px;
-  }
-
-  .index .nav-buttons {
-    font-size: 1em;
-  }
-
-  .index .first-part {
-    height: auto;
-    padding: 30px 20px 50px 20px;
-  }
-
-  .index .first-part .left-part {
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
-    font-size: 1.3em;
-    max-width: 90%;
-  }
-
-  .index .first,
-  .index .second {
-    font-size: 1.1em;
-    margin-top: 20px;
-    line-height: 1.4;
-  }
-
-  .index .button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    font-size: 1em;
-    margin-top: 30px;
-  }
-
-  .index .first-part .explore,
-  .index .first-part .left-part .register {
-    width: 90%;
-    font-size: 0.95em;
-    padding: 10px 20px;
-  }
-
-  .index .hero {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 30px 20px;
-    gap: 30px;
-    height: auto;
-  }
-
-  .index .heroimg {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .index .herotext {
-    margin-left: 0;
-    padding: 0 10px;
-  }
-
-  .index .heading {
-    font-size: 1.8em;
-    text-align: center;
-  }
-
-  .index .third-part {
-    padding: 30px 20px;
-    height: auto;
-  }
-
-  .index .events-section h2 {
-    margin-top: 50px;
-    font-size: 1.6em;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-
-  .index .events-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin: 0 auto;
-  }
-
-  .index .event-card {
-    width: 90%;
-    height: auto;
-  }
-
-  .index h3 {
-    font-size: 1.8em;
-    margin-top: 20px;
-  }
-
-  .index .event-details {
-    position: static;
-    text-align: center;
-    padding: 20px;
-    margin: 0;
-  }
-
-  .index .footer {
-    padding: 30px 20px;
-    text-align: center;
-  }
-
-  .index .footer-heading {
-    font-size: 1.6em;
-    margin-left: 0;
-  }
-
-  .index .top-footer p,
-  .index .lower-footer {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .index .presented-by {
-    margin-top: 20px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .index .container {
-    right: 15px;
-    bottom: 15px;
-    width: 50px;
-    height: 50px;
-  }
-
-  .index .music-btn i {
-    font-size: 20px;
-  }
-}
-
-
-/* For screens up to 480px (typical phones) */
-@media screen and (max-width: 480px) {
-    .logo {
-        font-size: 1.5em;
+/* For screens up to 992px (smaller tablets/large phones) */
+@media screen and (max-width: 992px) {
+    .index .top-navigation {
+        padding: 15px 30px;
     }
-
-    .top-buttons {
+    
+    .index .logo img {
+        max-width: 180px;
+    }
+    
+    .index .top-buttons {
+        margin-left: 300px;
+        gap: 30px;
+    }
+    
+    .index .first-part .left-part {
+        margin-left: 60px;
+        font-size: 1.3em;
+    }
+    
+    .index .button-container {
         gap: 15px;
     }
+    
+    .index .hero {
+        gap: 30px;
+        padding: 40px 30px;
+    }
+    
+    .index .herotext {
+        max-width: 450px;
+    }
+    
+    .index .heading {
+        font-size: 32px;
+    }
+    
+    .index .events-grid {
+        gap: 15px;
+    }
+    
+    .index .event-card {
+        width: 320px;
+        height: 250px;
+    }
+    
+    .index .footer {
+        padding: 40px 30px;
+    }
+    
+    .index .top-footer {
+        gap: 30px;
+    }
+    
+    .index .presented-by {
+        margin-left: 300px;
+    }
+}
 
-    .nav-buttons {
-        font-size: small;
-        padding: 8px 12px;
+/* For screens up to 768px (typical tablets) */
+@media screen and (max-width: 768px) {
+    .index .top-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px;
+        height: auto;
     }
 
-    .first-part .left-part {
-        font-size: 1.1em;
+    .index .logo {
+        margin: 0;
     }
 
-    .first {
-        font-size: 1em;
+    .index .logo img {
+        max-width: 150px;
+    }
+
+    .index .top-buttons {
+        margin: 0;
+        gap: 15px;
+        justify-content: space-between;
+    }
+
+    .index .nav-buttons {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+
+    .index .first-part {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .index .first-part .left-part {
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
+        align-items: center;
+        font-size: 1.2em;
         margin-top: 120px;
     }
 
-    .second {
-        font-size: 1em;
-        margin-top: 15px;
+    .index .first,
+    .index .second {
+        font-size: 1.1em;
+        margin-top: 20px;
+        line-height: 1.4;
+        text-align: center;
     }
 
-    .button-container {
-        font-size: 16px;
+    .index .second {
+        margin-top: 30px;
     }
 
-    .hero {
-        padding: 20px 15px;
+    .index .button-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .index .first-part .explore,
+    .index .first-part .left-part .register {
+        height: 45px;
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .index .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+        gap: 30px;
+        height: auto;
+    }
+
+    .index .heroimg {
+        max-width: 80%;
+    }
+
+    .index .herotext {
+        margin-left: 0;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    .index .heading {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .index .third-part {
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .index .events-section h2 {
+        margin-top: 20px;
+        font-size: 1.6em;
+    }
+
+    .index .events-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+    }
+
+    .index .event-card {
+        width: 85%;
+        height: 250px;
+        margin: 0;
+    }
+    
+    .index .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+    
+    .index .footer-heading {
+        font-size: 32px;
+        margin-left: 20px;
+    }
+    
+    .index .top-footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .index .top-footer p {
+        margin-left: 20px;
+    }
+    
+    .index .lower-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    
+    .index .lower-footer p {
+        margin-left: 20px;
+    }
+    
+    .index .presented-by {
+        margin: 20px 0 0 20px;
     }
 }
 
-/*About Us page Responsiveness*/
-
-/* For screens up to 1200px */
-@media screen and (max-width: 1200px) {
-  .index .first-part {
-        height: auto; /* Adjust height */
-        padding-bottom: 30px;
+@media screen and (max-width: 480px) {
+    .index .top-navigation {
+        padding: 10px 15px;
+        height: 70px;
     }
 
-   .index .top-navigation {
-        padding: 1.5%; /* Adjust padding */
+    .index .logo {
+        margin: 0;
     }
 
-   .index .top-buttons {
-        margin-left: auto;
-        margin-right: 20px;
-        gap: 30px;
-        margin-top: 15px;
+    .index .logo img {
+        max-width: 120px;
     }
 
-   .index .text-part {
-        margin-left: 50px;
-        margin-right: 50px;
-        padding: 3rem;
+    .index .top-buttons {
+        top: 70px;
     }
 
-   .index h1 {
-        font-size: 2.2em;
+    .index .nav-buttons {
+        font-size: 0.8em;
+        padding: 8px 0;
     }
 
-   .index .first-part p {
-        font-size: 16px;
-        margin-top: 25px;
+    .index .first-part .left-part {
+        margin-top: 100px;
+        font-size: 1em;
+        padding: 0 15px;
+    }
+
+    .index .first {
+        font-size: 1.1em;
         line-height: 1.3;
     }
 
-   .index .image {
-        margin-left: 20px;
-        margin-right: 20px;
+    .index .second {
+        font-size: 1.1em;
+        line-height: 1.3;
     }
 
-   .index .first-part img {
-        height: auto;
-        width: 100%;
-        margin-bottom: 30px;
+    .index .button-container {
+        gap: 10px;
+        flex-direction: column;
     }
 
-   .index .footer {
-        padding: 40px 20px;
+    .index .first-part .explore,
+    .index .first-part .left-part .register {
+        height: 40px;
+        font-size: 0.8em;
+        padding: 5px 15px;
+        width: 140px;
+    }
+
+    .index .hero {
+        padding: 30px 15px;
+    }
+
+    .index .heroimg {
+        max-width: 90%;
+    }
+
+    .index .heading {
+        font-size: 24px;
+    }
+
+    .index .herotext p {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+
+    .index .third-part {
+        padding: 30px 15px;
+    }
+
+    .index .events-section h2 {
+        font-size: 1.4em;
+    }
+
+    .index .events-description {
+        font-size: 0.8em;
+    }
+
+    .index .event-card {
+        width: 90%;
+        height: 220px;
+    }
+
+    .index .event-details h3 {
+        font-size: 1.3em;
+    }
+
+    .index .footer {
+        padding: 30px 15px;
+    }
+
+    .index .footer-heading {
+        font-size: 28px;
+    }
+
+    .index .top-footer p, 
+    .index .lower-footer p {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+
+    .index .social-icons {
+        gap: 15px;
+    }
+
+    .index .presented-by {
         flex-direction: column;
         align-items: flex-start;
-        height: auto; /* Adjust height */
+    }
+
+    .index .presented-logo {
+        margin-top: 10px;
+        max-width: 150px;
+    }
+
+    .index .container {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .index .music-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .index .music-btn i {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .regd .container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .regd .left {
+        flex: none;
+        width: 100%;
+        min-height: 40vh;
+    }
+    
+    .regd .left-text {
+        margin: 50px auto;
+        text-align: center;
+        font-size: 1.1em !important;
+    }
+    
+    .regd .left h1 {
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+    }
+    
+    .regd .left p {
+        text-align: center;
+        line-height: 1.4 !important;
+    }
+    
+    .regd .right {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    
+    .regd .input-container {
+        width: 90%;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    
+    .regd button {
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .regd .left-text {
+        margin: 30px auto;
+        font-size: 0.9em !important;
+    }
+    
+    .regd .left h1 {
+        font-size: 28px;
+    }
+    
+    .regd .right h1 {
+        font-size: 24px !important;
+    }
+    
+    .regd .right p {
+        font-size: 14px !important;
+    }
+    
+    .regd .input-container {
+        width: 95%;
+        padding: 8px;
+    }
+    
+    .regd .input-field {
+        padding: 8px;
+    }
+    
+    .regd button {
+        height: 45px;
+        width: 110px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login .container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .login .left-side {
+        flex: none;
+        min-height: 40vh;
+        padding: 40px 20px;
+    }
+    
+    .login .left-text {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .login .left-side h1 {
+        font-size: 2.4rem;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .login .left-side p {
+        font-size: 0.9rem;
+        margin: 20px auto;
+        text-align: center;
+    }
+    
+    .login .right-side {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    
+    .login .input-field {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .login button {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login .left-text {
+        margin: 30px auto;
+    }
+    
+    .login .left-side h1 {
+        font-size: 2rem;
+    }
+    
+    .login .right-side h2 {
+        font-size: 1.4rem;
+    }
+    
+    .login .right-side p {
+        font-size: 0.9rem;
+    }
+    
+    .login .form-group {
+        margin-bottom: 12px;
+    }
+    
+    .login input[type="email"],
+    .login input[type="password"] {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .login button {
+        padding: 10px;
+        height: 45px;
+        width: 110px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tech .top-navigation,
+    .fun .top-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        height: auto;
+    }
+    
+    .tech .logo,
+    .fun .logo {
+        margin-left: 0;
+    }
+    
+    .tech .top-buttons,
+    .fun .top-buttons {
+        margin-right: 0;
+        padding: 0;
+    }
+    
+    .tech .cardcontainer,
+    .fun .cardcontainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 30px;
+        padding: 0 20px;
+    }
+    
+    .tech .card-inner,
+    .fun .card-inner {
+        min-height: 480px;
+    }
+    
+    .tech .footer,
+    .fun .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+    
+    .tech .top-footer,
+    .fun .top-footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .tech .lower-footer,
+    .fun .lower-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    
+    .tech .presented-by,
+    .fun .presented-by {
+        margin: 20px 0 0 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tech .cardcontainer,
+    .fun .cardcontainer {
+        padding: 0 15px;
+    }
+    
+    .tech .card-inner,
+    .fun .card-inner {
+        min-height: 450px;
+    }
+    
+    .tech .card-front .info h3,
+    .fun .card-front .info h3 {
+        font-size: 1.3em;
+    }
+    
+    .tech .card-front .info p,
+    .fun .card-front .info p {
+        font-size: 0.9em;
+    }
+    
+    .tech .card-back p,
+    .fun .card-back p {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+    
+    .tech .footer-heading,
+    .fun .footer-heading {
+        font-size: 28px;
+        margin-left: 20px;
+    }
+    
+    .tech .presented-logo,
+    .fun .presented-logo {
+        margin-top: 10px;
+        max-width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about .top-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        height: auto;
+    }
+    
+    .about .logo {
+        margin-left: 0;
+    }
+    
+    .about .top-buttons {
+        margin-right: 0;
+        padding: 0;
+    }
+    
+    .about .content-container {
+        flex-direction: column;
+        padding: 80px 20px 40px;
+    }
+    
+    .about .text-section {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .about .image-section {
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .about .about-image {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .about .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+    
+    .about .top-footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .about .lower-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    
+    .about .presented-by {
+        margin: 20px 0 0 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .top-navigation {
+        padding: 10px 15px !important;
+        height: 70px !important;
+    }
+    
+    .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    
+    .social-icons a {
+        font-size: 18px;
+    }
+    
+    .footer {
+        padding: 30px 15px !important;
+        margin-top: 30px !important;
+    }
+    
+    .presented-by {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Back to Home button responsive styles */
+@media screen and (max-width: 768px) {
+    .back-home {
+        bottom: 15px;
+        left: 15px;
+        padding: 8px 12px;
+    }
+    
+    .back-home a {
+        font-size: 14px;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .back-home {
+        bottom: 10px;
+        left: 10px;
+        padding: 6px 10px;
+    }
+    
+    .back-home a {
+        font-size: 12px;
+    }
+}
+
+/* Mobile menu toggle button styles */
+@media screen and (min-width: 993px) {
+    .menu-toggle {
+/* media-queries.css */
+
+/* Styles for screens up to 1200px (typical smaller desktops/large tablets) */
+@media screen and (max-width: 1200px) {
+    .index .top-buttons {
+        margin-left: auto; /* Push buttons to the right */
+        margin-right: 20px; /* Add some right margin */
+        gap: 30px;
+    }
+
+    .index .first-part .left-part {
+        margin-left: 100px;
+        font-size: 1.5em;
+    }
+
+    .index .first {
+        font-size: 1.2em;
+        margin-top: 200px;
+    }
+
+    .index .second {
+        font-size: 1.2em;
+        margin-top: 30px;
+    }
+
+    .index .button-container {
+        gap: 20px;
+        font-size: 20px;
+    }
+
+    .index .hero {
+        padding: 40px 20px;
+        gap: 20px;
+    }
+
+    .index .heroimg {
+        max-width: 50%;
+    }
+
+    .index .heading {
+        font-size: 36px;
+    }
+
+    .index .events-grid {
+        margin-left: 20px;
+    }
+
+    .index .event-card {
+        width: 400px;
+        height: 280px;
+        margin-right: 30px;
+    }
+
+    .index h3 {
+        font-size: 48px;
+        margin-top: 150px;
+    }
+
+    .index .footer {
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    .index .top-footer {
+        gap: 50px;
+    }
+
+    .index .presented-by {
+        margin-left: 400px;
+    }
+
+    .index .container {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+/* For screens up to 992px (smaller tablets/large phones) */
+@media screen and (max-width: 992px) {
+    .index .top-navigation {
+        padding: 15px 30px;
+    }
+    
+    .index .logo img {
+        max-width: 180px;
+    }
+    
+    .index .top-buttons {
+        margin-left: 300px;
+        gap: 30px;
+    }
+    
+    .index .first-part .left-part {
+        margin-left: 60px;
+        font-size: 1.3em;
+    }
+    
+    .index .button-container {
+        gap: 15px;
+    }
+    
+    .index .hero {
+        gap: 30px;
+        padding: 40px 30px;
+    }
+    
+    .index .herotext {
+        max-width: 450px;
+    }
+    
+    .index .heading {
+        font-size: 32px;
+    }
+    
+    .index .events-grid {
+        gap: 15px;
+    }
+    
+    .index .event-card {
+        width: 320px;
+        height: 250px;
+    }
+    
+    .index .footer {
+        padding: 40px 30px;
+    }
+    
+    .index .top-footer {
+        gap: 30px;
+    }
+    
+    .index .presented-by {
+        margin-left: 300px;
+    }
+}
+
+/* For screens up to 768px (typical tablets) */
+@media screen and (max-width: 768px) {
+    .index .top-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px;
+        height: auto;
+    }
+
+    .index .logo {
+        margin: 0;
+    }
+
+    .index .logo img {
+        max-width: 150px;
+    }
+
+    .index .top-buttons {
+        margin: 0;
+        gap: 15px;
+        justify-content: space-between;
+    }
+
+    .index .nav-buttons {
+        font-size: 0.9em;
+        padding: 5px;
+    }
+
+    .index .first-part {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .index .first-part .left-part {
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
+        align-items: center;
+        font-size: 1.2em;
+        margin-top: 120px;
+    }
+
+    .index .first,
+    .index .second {
+        font-size: 1.1em;
+        margin-top: 20px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .index .second {
+        margin-top: 30px;
+    }
+
+    .index .button-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .index .first-part .explore,
+    .index .first-part .left-part .register {
+        height: 45px;
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .index .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+        gap: 30px;
+        height: auto;
+    }
+
+    .index .heroimg {
+        max-width: 80%;
+    }
+
+    .index .herotext {
+        margin-left: 0;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    .index .heading {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .index .third-part {
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .index .events-section h2 {
+        margin-top: 20px;
+        font-size: 1.6em;
+    }
+
+    .index .events-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+    }
+
+    .index .event-card {
+        width: 90%;
+        max-width: 450px;
+        height: 280px;
+        margin-right: 0;
+    }
+
+    .index .footer {
+        height: auto;
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+
+    .index .footer-heading {
+        margin-top: 0;
+        font-size: 32px;
+        margin-left: 20px;
     }
 
     .index .top-footer {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
         align-items: flex-start;
     }
 
-   .index .top-footer p {
-        margin-left: 0;
+    .index .top-footer p {
+        margin-left: 20px;
     }
 
-   .index .lower-footer {
+    .index .lower-footer {
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
+        gap: 20px;
+        margin-top: 30px;
     }
 
-   .index .presented-by {
-        margin-left: 0;
-        margin-top: 15px;
+    .index .lower-footer p {
+        margin-left: 20px;
+    }
+
+    .index .presented-by {
+        margin-left: 20px;
+        margin-top: 20px;
     }
 }
 
-/* For screens up to 768px (tablets) */
-@media screen and (max-width: 768px) {
-  .index  .top-navigation {
+/* For screens up to 480px (mobile phones) */
+@media screen and (max-width: 480px) {
+    .index .top-navigation {
+        padding: 10px;
         flex-direction: column;
         align-items: center;
-        height: auto;
-        padding: 15px;
-        margin-top: 10px;
-        text-align: center;
     }
 
-  .index .logo {
-        margin-left: 0;
+    .index .logo {
         margin-bottom: 10px;
-        font-size: 1.8em;
     }
 
-  .index .top-buttons {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 15px;
+    .index .logo img {
+        max-width: 130px;
+    }
+
+    .index .top-buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .index .nav-buttons {
+        font-size: 0.8em;
+    }
+
+    .index .first-part .left-part {
+        font-size: 1em;
+        margin-top: 100px;
+        padding: 0 15px;
+    }
+
+    .index .first {
+        font-size: 1em;
+        margin-top: 160px;
+    }
+
+    .index .second {
+        font-size: 1em;
+        margin-top: 25px;
+    }
+
+    .index .button-container {
         flex-direction: column;
-        align-items: center;
         gap: 15px;
     }
 
-  .index .nav-buttons {
-        font-size: medium;
+    .index .first-part .explore,
+    .index .first-part .left-part .register {
+        width: 200px;
+        font-size: 0.85em;
     }
 
-  .index  .text-part {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 2rem;
+    .index .hero {
+        padding: 40px 15px;
     }
 
-  .index  h1 {
-        font-size: 2em;
-        text-align: center;
+    .index .heroimg {
+        max-width: 100%;
     }
 
-  .index  .first-part p {
-        font-size: 15px;
-        margin-top: 20px;
-        text-align: left;
+    .index .heading {
+        font-size: 24px;
     }
 
-  .index  .image {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-  .index  .footer {
-        padding: 30px 20px;
-    }
-
-  .index  .footer-heading {
-        font-size: 32px;
-        margin-left: 0;
-        text-align: center;
-    }
-
-  .index  .top-footer p {
-        margin-left: 0;
-        text-align: center;
-    }
-
-  .index  .lower-footer {
-        gap: 20px;
-    }
-
-  .index  .presented-by {
-        align-items: center;
-    }
-}
-
-/* For screens up to 480px (phones) */
-@media screen and (max-width: 480px) {
-  .index  .logo {
-        font-size: 1.5em;
-        margin-left: 0;
-    }
-
-  .index  .top-buttons {
-        gap: 10px;
-        margin-top: 10px;
-    }
-
-   .index .nav-buttons {
-        font-size: small;
-        padding: 8px 12px;
-    }
-
-  .index  .text-part {
-        margin-left: 15px;
-        margin-right: 15px;
-        padding: 1.5rem;
-    }
-
-  .index  h1 {
-        font-size: 1.8em;
-    }
-
-  .index  .first-part p {
-        font-size: 14px;
-        margin-top: 15px;
-    }
-
-  .index  .image {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-  .index  .footer {
-        padding: 20px 15px;
-    }
-
-  .index  .footer-heading {
-        font-size: 28px;
-    }
-
-  .index  .top-footer p {
+    .index .herotext p {
         font-size: 0.9em;
     }
 
-  .index  .lower-footer {
-        gap: 15px;
+    .index .third-part {
+        padding: 40px 15px;
     }
 
-  .index  .presented-by {
-        font-size: medium;
+    .index .events-section h2 {
+        font-size: 1.4em;
+    }
+
+    .index .events-description {
+        font-size: 0.9em;
+    }
+
+    .index .event-card {
+        width: 100%;
+        height: 230px;
+    }
+
+    .index .event-details h3 {
+        font-size: 1.2em;
+    }
+
+    .index .footer {
+        padding: 30px 15px;
+    }
+
+    .index .footer-heading {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    .index .top-footer p, 
+    .index .lower-footer p {
+        margin-left: 10px;
+        font-size: 0.9em;
+    }
+
+    .index .social-icons {
+        margin-left: 10px;
+    }
+
+    .index .presented-by {
+        margin-left: 10px;
         gap: 10px;
+        font-size: 0.9em;
     }
 
-  .index  .presented-logo {
-        max-width: 40px;
-    }
-}
-
-
-/*Register page Responsiveness*/
-
-/* For screens up to 1200px */
-@media screen and (max-width: 1200px) {
-  .regd .container {
-        flex-direction: column; /* Stack left and right sections */
-        height: auto;
-    }
-
-  .regd .left {
-        flex: none; /* Don't take up full flex space */
-        width: 100%;
-        min-height: 300px; /* Ensure some height */
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-  .regd  .left-text {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        text-align: center;
-    }
-
-  .regd  .left h1 {
-        font-size: 40px;
-        line-height: 1.2;
-    }
-
-  .regd  .left p {
-        font-size: 15px;
-        line-height: 1.4;
-        margin-top: 20px;
-    }
-
-  .regd  .right {
-        width: 100%;
-        padding: 40px 20px;
-    }
-
-  .regd  .input-container {
-        width: 90%;
-        margin: 15px auto;
-    }
-
-  .regd  .right h1 {
-        font-size: 24px;
-        text-align: center;
-    }
-
-  .regd  .right p {
-        text-align: center;
-        font-size: 16px;
-    }
-
-  .regd  button {
-        width: 100%;
-        max-width: 300px;
-        height: 45px;
-        font-size: 14px;
-    }
-
-  .regd  #rightlink {
-        margin-top: 30px;
-        font-size: medium;
-    }
-}
-
-/* For screens up to 768px (tablets) */
-@media screen and (max-width: 768px) {
-  .regd  .left h1 {
-        font-size: 32px;
-    }
-
-  .regd  .left p {
-        font-size: 14px;
-    }
-
-  .regd  .right h1 {
-        font-size: 22px;
-    }
-
-  .regd  .right p {
-        font-size: 15px;
-    }
-
-  .regd  .input-container {
-        width: 95%;
-    }
-
-  .regd  button {
-        font-size: 13px;
+    .index .presented-logo {
+        width: 40px;
         height: 40px;
     }
 
-  .regd  #rightlink {
-        font-size: small;
+    .index .container {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .index .music-btn {
+        width: 50px;
+        height: 50px;
+    }
+
+    .index .music-btn i {
+        font-size: 18px;
     }
 }
 
-/* For screens up to 480px (phones) */
+/* Responsive styles for the Register page */
+@media screen and (max-width: 768px) {
+    .regd .container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .regd .left {
+        width: 100%;
+        min-height: 40vh;
+    }
+    
+    .regd .left-text {
+        margin: 80px auto;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    .regd .left h1 {
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
+    }
+    
+    .regd .left p {
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+    .regd .right {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    
+    .regd .input-container {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    
+    .regd button {
+        margin: 20px auto;
+        display: block;
+    }
+}
+
 @media screen and (max-width: 480px) {
-  .regd  .left {
-        padding: 30px 15px;
+    .regd .left-text {
+        margin: 60px auto;
     }
-
-  .regd  .left-text {
-        margin-top: 30px;
-    }
-
-  .regd  .left h1 {
+    
+    .regd .left h1 {
         font-size: 28px;
     }
-
-  .regd  .left p {
-        font-size: 13px;
+    
+    .regd .right h1 {
+        font-size: 24px;
     }
-
-  .regd  .right {
-        padding: 30px 15px;
-    }
-
-  .regd  .right h1 {
-        font-size: 20px;
-    }
-
-  .regd  .right p {
+    
+    .regd .right p {
         font-size: 14px;
     }
-
-  .regd  .input-container {
-        width: 100%;
+    
+    .regd .input-container {
+        padding: 8px;
     }
-
-  .regd  .input-field::placeholder {
+    
+    .regd .input-field {
         font-size: 14px;
     }
-
-  .regd  button {
-        font-size: 12px;
-        height: 35px; }
-
-  .regd  #rightlink {
-        font-size: smaller;
+    
+    .regd button {
+        height: 45px;
+        width: 110px;
+        font-size: 14px;
     }
 }
 
-
-/*Sign In page Responsiveness*/
-
-/* media-queries.css */
-
-/* Existing media queries for other pages */
-/* ... */
-
-/* --- Responsive Styles for Sign In Page --- */
-
-/* For screens up to 1200px */
-@media screen and (max-width: 1200px) {
-  .login  body {
-        flex-direction: column; /* Stack left and right sections */
-        min-height: auto;
-    }
-
-  .login  .left-side {
-        width: 100%;
-        padding: 40px;
-        text-align: center;
-    }
-
-  .login  .left-side h1 {
-        font-size: 2.8rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-  .login  .left-side p {
-        font-size: 1.0rem;
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-    }
-
-  .login  .right-side {
-        width: 100%;
-        padding: 30px;
-    }
-
-  .login  .right-side h2 {
-        font-size: 1.6rem;
-        text-align: center;
-    }
-
-  .login  .right-side p {
-        text-align: center;
-        font-size: 0.9rem;
-        margin-bottom: 15px;
-    }
-
-  .login  .form-group {
-        margin-bottom: 12px;
-    }
-
-  .login  input[type="email"],
-  input[type="password"] {
-        padding: 10px;
-        font-size: 0.9rem;
-    }
-
-  .login  .form-links {
-        font-size: 0.8rem;
-        text-align: center;
-        margin-bottom: 15px;
-    }
-
-  .login  .buttondiv {
-        display: flex;
-        justify-content: center;
-    }
-
-  .login  button {
-        margin-left: 0;
-        padding: 12px 25px;
-        font-size: 0.9rem;
-        width: auto; /* Adjust width */
-    }
-}
-
-/* For screens up to 768px (tablets) */
+/* Responsive styles for Sign In page */
 @media screen and (max-width: 768px) {
-  .login  .left-side h1 {
-        font-size: 2.4rem;
+    .login .container {
+        flex-direction: column;
+        height: auto;
     }
-
-  .login  .left-side p {
-        font-size: 0.9rem;
+    
+    .login .left-side {
+        width: 100%;
+        min-height: 40vh;
     }
-
-  .login  .right-side h2 {
-        font-size: 1.4rem;
+    
+    .login .left-text {
+        margin: 80px auto;
+        text-align: center;
+        padding: 0 20px;
     }
-
-  .login  .right-side p {
-        font-size: 0.85rem;
+    
+    .login .left-side h1 {
+        font-size: 36px;
+        line-height: 1.2;
+        text-align: center;
     }
-
-  .login  input[type="email"],
-    input[type="password"] {
-        padding: 10px;
-        font-size: 0.85rem;
+    
+    .login .left-side p {
+        text-align: center;
+        line-height: 1.5;
     }
-
-  .login  .form-links {
-        font-size: 0.75rem;
+    
+    .login .right-side {
+        width: 100%;
+        padding: 40px 20px;
     }
-
-  .login  button {
-        padding: 10px 20px;
-        font-size: 0.85rem;
+    
+    .login .input-field {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    
+    .login button {
+        margin: 20px auto;
+        display: block;
     }
 }
 
-/* For screens up to 480px (phones) */
 @media screen and (max-width: 480px) {
-  .login  .left-side {
+    .login .left-text {
+        margin: 60px auto;
+    }
+    
+    .login .left-side h1 {
+        font-size: 28px;
+    }
+    
+    .login .right-side h2 {
+        font-size: 24px;
+    }
+    
+    .login .right-side p {
+        font-size: 14px;
+    }
+    
+    .login .form-group {
+        padding: 8px;
+    }
+    
+    .login input[type="email"],
+    .login input[type="password"] {
+        font-size: 14px;
+    }
+    
+    .login button {
+        height: 45px;
+        width: 110px;
+        font-size: 14px;
+    }
+}
+
+/* Tech Events Page Responsive Styles */
+@media screen and (max-width: 768px) {
+    .tech .top-navigation {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .tech .logo {
+        margin-bottom: 15px;
+    }
+
+    .tech .top-buttons {
+        margin-left: 0;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .tech .cardcontainer {
+        grid-template-columns: 1fr;
+        gap: 30px;
         padding: 30px 20px;
     }
 
-  .login  .left-side h1 {
-        font-size: 2.0rem;
+    .tech .card-inner {
+        height: 400px;
     }
 
-  .login  .left-side p {
-        font-size: 0.8rem;
+    .tech .footer {
+        height: auto;
+        padding: 40px 20px;
+        flex-direction: column;
     }
 
-  .login  .right-side {
+    .tech .top-footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .tech .lower-footer {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .tech .presented-by {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tech .cardcontainer {
+        padding: 20px 15px;
+    }
+
+    .tech .card-inner {
+        height: 350px;
+    }
+
+    .tech .card-front .info h3 {
+        font-size: 1.4em;
+    }
+
+    .tech .card-front .info p {
+        font-size: 0.9em;
+    }
+
+    .tech .card-back p {
+        font-size: 0.9em;
+        padding: 15px;
+    }
+
+    .tech .footer-heading {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    .tech .presented-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Fun Events Page Responsive Styles */
+@media screen and (max-width: 768px) {
+    .fun .top-navigation {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .fun .logo {
+        margin-bottom: 15px;
+    }
+
+    .fun .top-buttons {
+        margin-left: 0;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .fun .cardcontainer {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .fun .card-inner {
+        height: 400px;
+    }
+
+    .fun .footer {
+        height: auto;
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+
+    .fun .top-footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .fun .lower-footer {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .fun .presented-by {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fun .cardcontainer {
+        padding: 20px 15px;
+    }
+
+    .fun .card-inner {
+        height: 350px;
+    }
+
+    .fun .card-front .info h3 {
+        font-size: 1.4em;
+    }
+
+    .fun .card-front .info p {
+        font-size: 0.9em;
+    }
+
+    .fun .card-back p {
+        font-size: 0.9em;
+        padding: 15px;
+    }
+
+    .fun .footer-heading {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+
+    .fun .presented-logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* About Us Page Responsive Styles */
+@media screen and (max-width: 768px) {
+    .about .top-navigation {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .about .logo {
+        margin-bottom: 15px;
+    }
+
+    .about .top-buttons {
+        margin-left: 0;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .about .content-container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .about .text-section {
+        width: 100%;
         padding: 20px;
     }
 
-  .login  .right-side h2 {
-        font-size: 1.2rem;
+    .about .image-section {
+        width: 100%;
+        margin-top: 30px;
     }
 
-  .login  .right-side p {
-        font-size: 0.8rem;
+    .about .about-image {
+        max-width: 100%;
+        height: auto;
     }
 
-  .login  input[type="email"],
-    input[type="password"] {
-        padding: 8px;
-        font-size: 0.8rem;
+    .about .footer {
+        height: auto;
+        padding: 40px 20px;
+        flex-direction: column;
     }
 
-  .login  .form-links {
-        font-size: 0.7rem;
+    .about .top-footer {
+        flex-direction: column;
+        gap: 30px;
     }
 
-  .login  button {
-        padding: 10px 15px;
-        font-size: 0.8rem;
+    .about .lower-footer {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .about .presented-by {
+        margin-left: 0;
+        margin-top: 20px;
     }
 }
 
-
-/*Tech Events Responsiveness*/
-
-/* media-queries.css */
-
-/* Existing media queries for other pages */
-/* ... */
-
-/* --- Responsive Styles for Tech Events Page --- */
-
-@media screen and (max-width: 1200px) {
-.tech  .cardcontainer {
-    max-width: 90%;
-    column-gap: 60px;
-  }
-
-.tech  .column {
-    gap: 60px;
-  }
-
-.tech  .card-inner {
-    min-height: 500px;
-  }
-
-.tech  .card-back p {
-    top: 150px;
-    font-size: 0.9em;
-  }
-
-.tech  .card-back button {
-    bottom: 150px;
-    right: 100px;
-    font-size: 0.9em;
-  }
-}
-
-/* For screens up to 992px (larger tablets) */
-@media screen and (max-width: 992px) {
-.tech  .cardcontainer {
-    grid-template-columns: 1fr; /* Single column */
-    column-gap: 0;
-    max-width: 600px;
-  }
-
-.tech  .column {
-    gap: 40px;
-  }
-
-.tech  .card-inner {
-    min-height: 450px;
-  }
-
-.tech  .card-back p {
-    top: 130px;
-    font-size: 0.85em;
-  }
-
-.tech  .card-back button {
-    bottom: 130px;
-    right: 50%;
-    transform: translateX(50%);
-  }
-}
-
-/* For screens up to 768px (typical tablets) */
-@media screen and (max-width: 768px) {
-.tech  #heading h1 {
-    font-size: 28px;
-  }
-
-.tech  .card-inner {
-    min-height: 400px;
-  }
-
-.tech  .card-front .info h3 {
-    font-size: 1.2em;
-  }
-
-.tech  .card-front .info p {
-    font-size: 0.9em;
-  }
-
-.tech  .card-front .info button {
-    bottom: 80px;
-    right: 10px;
-    font-size: 14px;
-    width: 25px;
-    height: 25px;
-  }
-
-.tech  .card-back p {
-    top: 110px;
-    font-size: 0.8em;
-    padding: 15px;
-  }
-
-.tech  .card-back button {
-    bottom: 110px;
-    font-size: 0.8em;
-    padding: 8px;
-  }
-
-.tech  .footer-heading {
-    font-size: 32px;
-    margin-left: 0;
-    text-align: center;
-  }
-
-.tech  .top-footer {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-.tech  .top-footer p {
-    margin-left: 0;
-    text-align: center;
-  }
-
-.tech  .lower-footer {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-  }
-
-.tech  .presented-by {
-    margin-left: 0;
-    margin-top: 15px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-.tech  .musiccontainer {
-    right: 15px;
-    bottom: 15px;
-    width: 50px;
-    height: 50px;
-  }
-
-.tech  .music-btn i {
-    font-size: 20px;
-  }
-}
-
-/* For screens up to 480px (phones) */
+/* General mobile fixes for all pages */
 @media screen and (max-width: 480px) {
-.tech  #heading h1 {
-    font-size: 24px;
-  }
-
-.tech  .card-inner {
-    min-height: 350px;
-  }
-
-.tech  .card-front img {
-    height: 300px;
-  }
-
-.tech  .card-front .info h3 {
-    font-size: 1.1em;
-  }
-
-.tech  .card-front .info p {
-    font-size: 0.8em;
-  }
-
-.tech  .card-front .info button {
-    bottom: 60px;
-    right: 5px;
-    font-size: 12px;
-    width: 20px;
-    height: 20px;
-  }
-
-.tech  .card-back p {
-    top: 90px;
-    font-size: 0.75em;
-    padding: 10px;
-  }
-
-.tech  .card-back button {
-    bottom: 90px;
-    font-size: 0.75em;
-    padding: 6px;
-  }
-
-.tech  .footer-heading {
-    font-size: 28px;
-  }
-
-.tech  .top-footer p {
-    font-size: 0.9em;
-  }
-
-.tech  .lower-footer p {
-    font-size: 0.8em;
-  }
-
-.tech  .social-icons a {
-    font-size: 1.2em;
-    margin: 0 5px;
-  }
-
-.tech  .presented-logo {
-    max-width: 60px;
-  }
-
-.tech  .musiccontainer {
-    width: 40px;
-    height: 40px;
-    right: 10px;
-    bottom: 10px;
-  }
-
-.tech  .music-btn i {
-    font-size: 18px;
-  }
-}
-
-/*Responsiveness of Fun Events*/
-
-@media screen and (max-width: 1200px) {
-.fun  .cardcontainer {
-    max-width: 90%;
-    column-gap: 60px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, auto); 
-  }
-
-.fun .card-inner {
-    min-height: 500px;
-  }
-
-.fun  .card-back p {
-    top: 150px;
-    font-size: 0.9em;
-  }
-
-.fun  .card-back button {
-    bottom: 150px;
-    right: 100px;
-    font-size: 0.9em;
-  }
-}
-
-/* For screens up to 992px (larger tablets) */
-@media screen and (max-width: 992px) {
-.fun  .cardcontainer {
-    grid-template-columns: 1fr; /* Single column */
-    column-gap: 0;
-    max-width: 600px;
-    gap: 80px;
-  }
-
-.fun  .card-inner {
-    min-height: 450px;
-  }
-
-.fun  .card-back p {
-    top: 130px;
-    font-size: 0.85em;
-  }
-
-.fun  .card-back button {
-    bottom: 130px;
-    right: 50%;
-    transform: translateX(50%);
-  }
-}
-
-/* For screens up to 768px (typical tablets) */
-@media screen and (max-width: 768px) {
-.fun  #heading h1 {
-    font-size: 28px;
-  }
-
-.fun  .card-inner {
-    min-height: 400px;
-  }
-
-.fun  .card-front .info h3 {
-    font-size: 1.2em;
-  }
-
-.fun  .card-front .info p {
-    font-size: 0.9em;
-  }
-
-.fun  .card-front .info button {
-    bottom: 80px;
-    right: 10px;
-    font-size: 14px;
-    width: 25px;
-    height: 25px;
-  }
-
-.fun  .card-back p {
-    top: 110px;
-    font-size: 0.8em;
-    padding: 15px;
-  }
-
-.fun  .card-back button {
-    bottom: 110px;
-    font-size: 0.8em;
-    padding: 8px;
-    width: auto; /* Adjust button width */
-    right: 50%;
-    transform: translateX(50%);
-  }
-
-.fun  .footer-heading {
-    font-size: 32px;
-    margin-left: 0;
-    text-align: center;
-  }
-
-.fun  .top-footer {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-.fun  .top-footer p {
-    margin-left: 0;
-    text-align: center;
-  }
-
-.fun  .lower-footer {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-  }
-
-.fun  .presented-by {
-    margin-left: 0;
-    margin-top: 15px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-.fun  .musiccontainer {
-    right: 15px;
-    bottom: 15px;
-    width: 50px;
-    height: 50px;
-  }
-
-.fun  .music-btn i {
-    font-size: 20px;
-  }
-}
-
-/* For screens up to 480px (phones) */
-@media screen and (max-width: 480px) {
-.fun  #heading h1 {
-    font-size: 24px;
-  }
-
-.fun  .cardcontainer {
-    grid-template-columns: 1fr; /* Single column */
-    gap: 60px;
-  }
-
-.fun  .card-inner {
-    min-height: 350px;
-  }
-
-.fun  .card-front img {
-    height: 300px;
-  }
-
-.fun  .card-front .info h3 {
-    font-size: 1.1em;
-  }
-
-.fun  .card-front .info p {
-    font-size: 0.8em;
-  }
-
-.fun  .card-front .info button {
-    bottom: 60px;
-    right: 5px;
-    font-size: 12px;
-    width: 20px;
-    height: 20px;
-  }
-
-.fun  .card-back p {
-    top: 90px;
-    font-size: 0.75em;
-    padding: 10px;
-  }
-
-.fun  .card-back button {
-    bottom: 90px;
-    font-size: 0.75em;
-    padding: 6px;
-    width: auto;
-  }
-
-.fun  .footer-heading {
-    font-size: 28px;
-  }
-
-.fun  .top-footer p {
-    font-size: 0.9em;
-  }
-
-.fun  .lower-footer p {
-    font-size: 0.8em;
-  }
-
-.fun  .social-icons a {
-    font-size: 1.2em;
-    margin: 0 5px;
-  }
-
-.fun  .presented-logo {
-    max-width: 60px;
-  }
-
-.fun  .musiccontainer {
-    width: 40px;
-    height: 40px;
-    right: 10px;
-    bottom: 10px;
-  }
-
-.fun  .music-btn i {
-    font-size: 18px;
-  }
-}
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    .top-navigation {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+    
+    .social-icons a {
+        font-size: 20px;
+    }
+    
+    .footer {
+        padding: 30px 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .presented-by {
+        align-items: center;
+    }
+}   
