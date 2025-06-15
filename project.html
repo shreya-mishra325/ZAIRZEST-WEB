@@ -10,9 +10,11 @@
     <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel = "stylesheet" href="styleicons.css">
     <link rel = "stylesheet" href="stylehome.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
-    <link rel="stylesheet" href="media-queries.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>-->
+
+    <!--<link rel="stylesheet" href="media-queries.css">-->
+    
 </head>
 <body class="index">
     <!--First Page-->
@@ -39,8 +41,11 @@
     <!--Second Page-->
      <main>
         <section class="hero">
-            <img src="cyberpanda.png" alt="cyberpanda" class="heroimg" data-aos="zoom-in">
-            <div class="herotext" data-aos="zoom-in">
+            <div class="left" data-aos="fade-up">
+                <img src="cyberpanda.png" alt="cyberpanda" class="heroimg" data-aos="fade-up">
+            </div>
+            <div class="right">
+            <div class="herotext" data-aos="fade-up">
                 <h1><div class="heading"><span class="zenheading" style="color: #38ccff;">Zen 4.0 :</span> Your Guide in The Cyber Wild!</div></h1>
                 <p>
                     'To forge the future, we must first innovate it.’ 
@@ -51,6 +56,7 @@
                     and languages such as Python and Firefox. The most exciting revelations are still to come.
                     Stay tuned for groundbreaking experiences ahead!
                 </p>
+            </div>
             </div>
         </section>
     </main>
@@ -150,7 +156,10 @@
     // <!--loading button functionality-->
     
     // animation effect
-     AOS.init();     
+     AOS.init();
+      AOS.init({
+    once: true,
+  });  
 </script>
 </body>
 </html>

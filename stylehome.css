@@ -465,9 +465,28 @@ body {
 
 @media screen and (max-width: 480px) {
   /* Prevent horizontal scrolling */
+  * {
+        scrollbar-width: none;
+    }
   html, body {
     max-width: 100%;
     overflow-x: hidden;
+  }
+  
+  .first-part {
+    display: flex;
+    flex-direction: column;
+  }
+  .first-part .left-part {
+    width: 380px;
+    margin-left: 50px;
+    font-size: 1.2em;
+    align-items: center;
+    margin-top: 120px;
+  }
+
+  .first-part .logo {
+    margin-left: 10px;
   }
 
   /* Navbar */
@@ -509,7 +528,96 @@ body {
     cursor: pointer;
   }
 
- 
+  .hero {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .heroimg {
+    width: 452.95px;
+    height: 400px;
+  }
+  .herotext{
+    margin: 0;
+    width: 300px;
+    height: 445.2px;
+  }
+  .right{
+    width: 300px;
+  }
+  .left{
+   width: 452.95px;
+   height: 404px;
+  }
+  
+  .events-grid{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .event-card{
+    margin-left: 60px;
+    background-size: cover;
+    background-position: center;
+    height: 240px;
+    width: 320px;
+  }
+  .event-details{
+    margin-top: -1.5px;
+  }
+
+   .index .footer {
+        display: flex;
+        flex-direction: column;
+        height: 539.2px;
+        padding: 20px 20px;
+        align-items: center;
+    }
+    
+    .footer .left {
+      padding: 20px;
+    }
+    .index .footer-heading {
+      text-align: center;
+        font-size: 32px;
+        margin-left: 10px;
+    }
+    
+    .index .top-footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .index .top-footer p {
+        margin-left: 0;
+        font-size: 0.9em;
+    }
+    
+    .index .lower-footer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .index .lower-footer p {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .index .presented-by {
+        margin: 20px 0 0 20px;
+    }
+    .presented-logo {
+      margin-top: -0.2px;
+    }
+}
+
+  
   @media (max-width: 768px) {
     .menu-toggle {
       display: block;
@@ -530,4 +638,3 @@ body {
       margin: 10px 0;
     }
   }
-}
