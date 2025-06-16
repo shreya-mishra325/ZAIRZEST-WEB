@@ -240,12 +240,11 @@ div {
     font-family: 'Outfit', sans-serif;
     background-color: black;
     color: white;
-    margin: 0%;
+    margin: 0;
     padding: 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
     width: 100vw;
     font-size: 20px;
     position: relative;
@@ -263,7 +262,7 @@ div {
   font-weight: 520;
   margin-top: 130px;
   font-size: 2em; 
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #38ccff;
 }
 
@@ -346,8 +345,8 @@ h3 {
 
 /*About Us Page Footer CSS*/
 body {
-      margin: 0%;
-      height: 1200px;
+      margin: 0;
+      height: 100vh;
       font-family: 'Outfit', sans-serif;
       background-color: #222121;
       color: white;
@@ -394,7 +393,7 @@ body {
     
     .lower-footer {
       font-size: 12px;
-      margin-top: 0px;
+      margin-top: 0;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
@@ -469,6 +468,9 @@ body {
         scrollbar-width: none;
     }
   html, body {
+    background-size: cover;
+    margin: 0;
+    padding: 0;
     max-width: 100%;
     overflow-x: hidden;
   }
@@ -478,15 +480,15 @@ body {
     flex-direction: column;
   }
   .first-part .left-part {
-    width: 380px;
-    margin-left: 50px;
-    font-size: 1.2em;
+    width: 100vw;
+    margin-left: 0;
+    font-size: 0.9em;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 10px;
   }
-
+ 
   .first-part .logo {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   /* Navbar */
@@ -529,21 +531,22 @@ body {
   }
 
   .hero {
-    width: 480px;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
   }
   .heroimg {
-    width: 452.95px;
-    height: 400px;
+    width: 100vw;
+    height: 100%;
   }
   .herotext{
     margin: 0;
-    width: 300px;
-    height: 445.2px;
+    height: 100vh;
   }
   .right{
+    height: 420px;
     width: 300px;
   }
   .left{
@@ -572,12 +575,14 @@ body {
    .index .footer {
         display: flex;
         flex-direction: column;
-        height: 539.2px;
+        height: 100vh;
         padding: 20px 20px;
         align-items: center;
     }
     
     .footer .left {
+      height: 100vh;
+      width: 100vw;
       padding: 20px;
     }
     .index .footer-heading {
@@ -614,6 +619,12 @@ body {
     }
     .presented-logo {
       margin-top: -0.2px;
+    }
+
+    .index .footer .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 42px;
     }
 }
 
