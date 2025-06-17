@@ -10,13 +10,13 @@
     <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel = "stylesheet" href="styleicons.css">
     <link rel = "stylesheet" href="stylehome.css">
-    <!--<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <!--<link rel="stylesheet" href="media-queries.css">-->
     
 </head>
-<body class="index">
+<body class="index" data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
     <!--First Page-->
     <div class="first-part">
     <div class="top-navigation">
@@ -28,7 +28,7 @@
     <a href="sign in.html" class ="nav-buttons">Sign In</a></button>
     </div>
     </div>
-    <div class ="left-part">
+    <div class ="left-part" data-aos="fade-right">
     <h1 class="first">Hunt the Future in the</h1>
     <h1 class ="second">Cyber Forest</h1>
     <div class ="button-container">
@@ -41,11 +41,11 @@
     <!--Second Page-->
      <main>
         <section class="hero">
-            <div class="left" data-aos="fade-up">
-                <img src="cyberpanda.png" alt="cyberpanda" class="heroimg" data-aos="fade-up">
+            <div class="left"  data-aos="fade-up">
+                <img src="cyberpanda.png" alt="cyberpanda" class="heroimg">
             </div>
-            <div class="right">
-            <div class="herotext" data-aos="fade-up">
+            <div class="right"  data-aos="fade-up">
+            <div class="herotext">
                 <h1><div class="heading"><span class="zenheading" style="color: #38ccff;">Zen 4.0 :</span> Your Guide in The Cyber Wild!</div></h1>
                 <p>
                     'To forge the future, we must first innovate it.’ 
@@ -64,7 +64,7 @@
     <!--Third Page-->
     <div id="page3" class="page">
     <div class="third-part">
-    <div class = "events-section">
+    <div class = "events-section"   data-aos="fade-up">
     <h2><b>Events for you</b></h2>
     <div class = "events-description">
     <P><i>
@@ -156,9 +156,12 @@
     // <!--loading button functionality-->
     
     // animation effect
-     AOS.init();
       AOS.init({
     once: true,
+    disable: 'phone',
+    offset: 120,
+    duration: 800,
+    easing: 'ease-in-out'
   });  
 </script>
 </body>

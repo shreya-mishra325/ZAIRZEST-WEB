@@ -2,17 +2,16 @@
 
 .first-part h1 {
   position: relative;
-  left: -100%;
   opacity: 0;
   animation: slideIn 1.7s ease-out 0s forwards;
 }
 @keyframes slideIn {
   0% {
-    left: -100%;
+    transform: translateX(100%);
     opacity: 0.5;
   }
   100% {
-    left: 0;
+    transform: translateX(0);
     opacity: 1;
   }
 }
