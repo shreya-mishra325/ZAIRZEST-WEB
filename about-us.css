@@ -344,6 +344,7 @@ body {
         flex-direction: column;
         height: 100vh;
         padding: 20px 20px;
+        align-items: center;
   }
     
     .left {
@@ -355,7 +356,7 @@ body {
       width: 100%;
       text-align: center;
         font-size: 32px;
-        margin-left: -10px;
+        margin-left: -17px;
     }
     
     .top-footer {
@@ -363,13 +364,14 @@ body {
         flex-direction: column;
         gap: 20px;
         align-items: center;
+        justify-content: center;
         text-align: center;
     }
     
     .top-footer p {
       max-width: max-content;
       margin-right: 12px;
-        margin-left: 0;
+        margin-left: -25px;
         font-size: 0.9em;
         flex-wrap: wrap;
     }
@@ -383,7 +385,7 @@ body {
     
     .lower-footer p {
       max-width: 100%;
-        margin-left: -20px;
+        margin-left: -30px;
         text-align: center;
     }
     
@@ -405,6 +407,6 @@ body {
     .top-footer .social-icons {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 69px;
+    margin-left: 55px;
     }
 }
