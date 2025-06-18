@@ -106,3 +106,30 @@ button{
 #rightlink{
     text-align: center;
 }
+
+@media screen and (max-width: 480px) {
+    * {
+        scrollbar-width: none;
+        box-sizing: border-box;
+    }
+  html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .left {
+    display: none;
+  }
+  .form-group {
+    max-width: 100%;
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+  h1 {
+    width: 100vw;
+  }
+  .input-container {
+    width: 100vw;
+  }
+}

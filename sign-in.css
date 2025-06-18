@@ -115,3 +115,42 @@
       background-color: #0099cc;
     }
    
+
+    @media screen and (max-width: 480px) {
+    * {
+        scrollbar-width: none;
+        box-sizing: border-box;
+    }
+  html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .right-side {
+     box-sizing: border-box;
+     width: 100vw;
+  }
+  .left-side {
+    display: none;
+  }
+  .form-group {
+    max-width: 100%;
+    width: 100vw;
+    display: flex;
+ 
+  }
+  h2 {
+    width: 100vw;
+    max-width: 100%;
+  }
+  .buttondiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    margin-left: -0.9px;
+    margin-right: -3px;
+  }
+}
