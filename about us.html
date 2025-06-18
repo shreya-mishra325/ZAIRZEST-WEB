@@ -12,7 +12,7 @@
     <link rel = "stylesheet" href="about-us.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
-    <link rel="stylesheet" href="media-queries.css">
+    <!--<link rel="stylesheet" href="media-queries.css">-->
 </head>
 <body class="about">
 <section>
@@ -25,7 +25,8 @@
     <ul><a href="sign in.html" class ="nav-buttons">Sign In</a></button></ul>
   </ul> 
   </div>
-<div class="text-part" data-aos="fade-up-right" data-aos="slide-up">
+  <div class="anime" data-aos="fade-up">
+<div class="text-part" data-aos="fade-up-right">
 <h1 data-aos="fade-up-left">Zairza: Igniting Innovation</h1>
 <div class="para"><p>Zairza, more than just a club, is a vibrant community of tech enthusiasts at Odisha University of Technology and Research. Rooted in our motto, "Wonder, Think, Create," we've been pushing the boundaries of innovation in Robotics, Software, and Design since 2005. Officially recognized as a central club in 2007, Zairza has consistently achieved excellence, earning numerous accolades.</p>
 </div>
@@ -37,6 +38,7 @@
 </div>
 <div class="photo-grid">
 <div class="image" data-aos="zoom-in"><img src ="zairza-grouppic.jpg"></div>
+</div>
 </div>
 </div>
 </section>
@@ -92,6 +94,7 @@
     })
  AOS.init({
     once: true,
+    disable: 'phone',
  });
 </script>
 </body>

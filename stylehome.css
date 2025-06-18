@@ -462,7 +462,6 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  /* Prevent horizontal scrolling */
   * {
         scrollbar-width: none;
     }
