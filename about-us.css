@@ -8,6 +8,7 @@ body {
 }
 
 * {
+  font-family: 'Outfit', sans-serif;
     scrollbar-width: thin;
     scrollbar-color: #888;
 }
@@ -248,7 +249,6 @@ body {
     margin: 0;
     padding: 0;
     max-width: 100%;
-    overflow-x: hidden;
   }
   
 
@@ -318,7 +318,7 @@ body {
   }
   .text-part {
     max-width: min-content;
-    font-size: 0.6em;
+    font-size: 0.7em;
     margin: 0;
     display: flex;
     align-items: center;
