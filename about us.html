@@ -15,17 +15,26 @@
     <!--<link rel="stylesheet" href="media-queries.css">-->
 </head>
 <body class="about">
-    <div class="page-wrapper">
+    <nav>
+    <div class="logo"><a href="index.html"><img src="Zairzest4.0.png"></a></div>
+    <div class="nav-links">
+      <a href="about us.html">About Us</a>
+      <a href="registerpage.html">Register</a>
+      <a href="sign in.html">Sign In</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()"> <i class="fa-solid fa-bars"></i></div>
+  </nav>
+  <div class="side-menu" id="sideMenu">
+    <div class="close-btn" onclick="toggleMenu()">X</div>
+    <a href="about us.html">About Us</a>
+    <a href="registerpage.html">Register</a>
+    <a href="sign in.html">Sign In</a>
+    <img src="zairzatext.jpg" alt="zairza" class="zairza">
+  </div>
+
+<div class="page-wrapper">
 <section>
     <!--First Page-->
-    <div class="top-navigation">
-    <div class="logo"><a href="index.html"><img src="Zairzest4.0.png"></a></div>
-    <ul class ="top-buttons">
-    <ul><a href="about us.html" class ="nav-buttons">About Us</a></ul>
-    <ul><a href="registerpage.html" class ="nav-buttons">Register</a></ul>
-    <ul><a href="sign in.html" class ="nav-buttons">Sign In</a></button></ul>
-  </ul> 
-  </div>
   <div class="anime" data-aos="fade-up">
 <div class="text-part">
 <h1 data-aos="fade-up-right">Zairza: Igniting Innovation</h1>
@@ -81,7 +90,7 @@
     </footer>
 
     <script>
-        function toggleMenu() {
+    function toggleMenu() {
       const menu = document.getElementById('sideMenu');
       menu.classList.toggle('active');
     }
